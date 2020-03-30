@@ -27,6 +27,7 @@
     <Compile Include="Data.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DiagramView.py" />
     <Compile Include="Main.py">
       <SubType>Code</SubType>
     </Compile>
