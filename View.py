@@ -1,68 +1,79 @@
 import tkinter as tk
-import MoveIncidentView as MIV
 from tkinter import filedialog
+import FilterFrames as FF
+import DiagramFrames as DF
+import Filters
+import Controller as C
 
 font="Helvetica 12"
 fontBold="Helvetica 12 bold"
+datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident"}
 
-class MainWindow:
+class MainWindow(tk.Tk):
     """the main Window"""
-    def __init__(self, application):
-        self.window = tk.Tk()
-        self.window.title("Trial of Two player data Analysis tool")
-        self.window.geometry("1200x800")
-        self.application = application
+    def __init__(self):
+        super().__init__()
+        self.title("Trial of Two player data Analysis tool")
+        self.controller = C.FilterController()
+        self.onDeleteFilters = []
+        self.onDeleteDiagrams = []
+        self.onUpdateDiagrams = []
 
-        self.importHead=tk.Label(self.window, text="select a .xml file", font=fontBold)
+        self.importFrame = ImportFrame(self, self.importXmlCallback, relief ="raised", borderwidth =2)
+        self.importFrame.grid(sticky="NW")
+        
+        self.mainloop()
+   
+    def importXmlCallback(self):
+        for action in self.onDeleteFilters: action()
+        for action in self.onDeleteDiagrams: action()
+        self.controller.newData(self.importFrame.currentFilepath)
+        if(hasattr(self, "dataSelectFrame")): self.dataSelectFrame.destroy()
+        self.dataSelectFrame = DataSelectFrame(self, self.selectChangeCallback, relief ="raised", borderwidth =2)
+        self.dataSelectFrame.grid(sticky="NW")
+        
+    def selectChangeCallback(self):
+        for action in self.onDeleteFilters: action()
+        for action in self.onDeleteDiagrams: action()
+        self.controller.newFilterOutlet(tag = self.dataSelectFrame.dataSelectTkVar.get()),
+        self.addEmptyFilterFrame()
+        self.addEmptyDiagramFrame()
+        
+    def addEmptyFilterFrame(self, *args):
+        newFrame = FF.EmptyFilterFrame(self, [self.addEmptyFilterFrame, self.controller.addFilter], relief = "raised", borderwidth=2)
+        self.onDeleteFilters.append(newFrame.destroy)
+        newFrame.grid(sticky ="NW")
+
+    def addEmptyDiagramFrame(self, *args):
+        newDiagram = DF.EmptyDiagramFrame(self, controller=self.controller, relief ="raised", borderwidth=2)
+        self.onDeleteDiagrams.append(newDiagram.destroy)
+        newDiagram.grid(row =0, rowspan = 100, column = 1, sticky="NE")
+
+class ImportFrame(tk.Frame):
+    def __init__(self, master=None, onImport=lambda *args : None, cnf={}, **kw):
+        super().__init__(master=master, cnf=cnf, **kw)
+        self.onImort = onImport
+        self.currentFilepath = ""
+        self.importHead=tk.Label(self, text="select a .xml file", font=fontBold)
         self.importHead.grid(sticky="NW")
-        self.importButton = tk.Button(self.window, text="open explorer..", command= lambda: self.getXMLFiles())
+        self.importButton = tk.Button(self, text="open explorer..", command= self.importXMLFiles)
         self.importButton.grid(sticky="NW")
+    
+    def importXMLFiles(self):
+        self.currentFilepath = filedialog.askopenfilename()
+        self.onImort()
 
-    def getXMLFiles(self):
-        self.window.withdraw()
-        filepath= filedialog.askopenfilename()
-        self.window.deiconify()
-        self.application.initializeData(filepath)
+class DataSelectFrame(tk.Frame):
+    def __init__(self, master=None, onSelectChange=lambda *args : None, cnf={}, **kw):
+        super().__init__(master=master, cnf=cnf, **kw)
+        self.onSelectChange = onSelectChange
+        self.dataSelectTkVar = tk.StringVar(self)
+        self.dataSelectTkVar.set("Choose..")
+        self.dataSelectTkVar.trace('w', self.changedSelectCallback)
+        self.dataSelectHead = tk.Label(self, text="select data", font = fontBold)
+        self.dataSelectHead.pack(fill=tk.X)
+        self.dataSelectMenu = tk.OptionMenu(self, self.dataSelectTkVar, *datapoints)
+        self.dataSelectMenu.pack(fill=tk.X)
 
-    def activateModuleSelect(self):
-        if hasattr(self, "modulesMenu"):
-            return
-        self.moduleTkVar = tk.StringVar(self.window, name="module")
-        self.moduleTkVar.set("Choose..")
-        self.modules = {"MoveIncidents", "DeathIncidents"}
-        self.moduleTkVar.trace('w', self.changeModuleCallback)
-        self.moduleHead = tk.Label(self.window, text="select datapoint", font = fontBold)
-        self.moduleHead.grid(sticky="NW")
-        self.modulesMenu = tk.OptionMenu(self.window, self.moduleTkVar, *self.modules)
-        self.modulesMenu.grid(sticky="NW")
-        
-        self.moveIncidentFilterFrame = MIV.MoveIncidentFilterFrame(self.window, self.application)
-        self.moveIncidentFilterFrame.grid()
-        self.moveIncidentFilterFrame.grid_remove()
-
-        self.deathIncidentFilterFrame = tk.Frame(self.window)
-        self.deathIncidentFilterFrame.grid()
-        self.moveIncidentFilterFrame.grid_remove()
-
-    def changeModuleCallback(self, *args):
-        self.deathIncidentFilterFrame.grid_remove()
-        self.moveIncidentFilterFrame.grid_remove()
-        if self.moduleTkVar.get() == "MoveIncidents":
-            self.moveIncidentFilterFrame.grid()
-            self.moveIncidentFilterFrame.updateFilterCallback()
-
-        elif self.moduleTkVar.get() == "DeathIncidents":
-            self.deathIncidentFilterFrame.grid()
-
-    def changeDataCallback(self):
-        self.moveIncidentFilterFrame.updateFilterCallback()
-
-
-
-
-        
-
-
-
-
-
+    def changedSelectCallback(self, *args):
+        self.onSelectChange()

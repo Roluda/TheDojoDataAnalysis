@@ -21,29 +21,26 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CheckboxFilter.py">
+    <Compile Include="Controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilterFrames.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DiagramView.py" />
+    <Compile Include="DiagramFrames.py" />
+    <Compile Include="Filters.py" />
     <Compile Include="Main.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewUtilities.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="View.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MoveIncidentView.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="MoveIncidentFilter.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Application.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

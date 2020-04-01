@@ -1,3 +1,3 @@
-import Application
+import View
 
-app = Application.Application()
+View.MainWindow()
