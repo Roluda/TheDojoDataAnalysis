@@ -1,5 +1,6 @@
 import tkinter as tk
 import Filters as F
+import View
 
 presets={
 
@@ -19,19 +20,19 @@ class EmptyFilterFrame(tk.Frame):
         self.filters = presets.keys()
         self.newFilterTkVar.trace('w', self._createNewFilterCallback)
         self.newFilterMenu = tk.OptionMenu(self, self.newFilterTkVar, *self.filters)
-        self.newFilterMenu.grid()
+        self.newFilterMenu.pack(anchor="s")
        
     def _createNewFilterCallback(self, *args):
-        self.newFilterMenu.grid_remove()
+        self.newFilterMenu.pack_forget()
         self.filter = presets[self.newFilterTkVar.get()]()
         for action in self.onFilterSelect: action(self.filter)
 
-        self.label = tk.Label(self, text=self.newFilterTkVar.get())
-        self.label.grid(row = 0, column=0, sticky ="W")
-        self.removeButton = tk.Button(self, text="remove", command = self.destroy)
-        self.removeButton.grid(row = 0, column = 1, sticky = "E")
-        self.toggleButton = tk.Button(self, text="hide", command = self.hide)
-        self.toggleButton.grid(row = 0, column = 2, sticky = "E")
+        self.headFrame = tk.Frame(self)
+        self.headFrame.pack(anchor="n", expand=True, fill=tk.X)
+        self.label = tk.Label(self.headFrame, text=self.newFilterTkVar.get())
+        self.label.pack(anchor="w")
+        self.removeButton = tk.Button(self.headFrame, text="remove", command = self.destroy)
+        self.removeButton.pack(anchor="e")
 
         if isinstance(self.filter, F.WhitelistFilterChild):
             self.settingFrame =CheckboxFilterFrame(
@@ -47,19 +48,14 @@ class EmptyFilterFrame(tk.Frame):
             )
         elif isinstance(self.filter, F.Filter):
             self.settingFrame=tk.Frame(self)
-        self.settingFrame.grid(sticky = "W")
+        self.settingFrame.pack(expand= True, fill=tk.X, anchor="s")
+
 
 
     def destroy(self):
         if hasattr(self, "filter"):
             self.filter.delete()
         super().destroy()
-
-    def hide(self):
-        if self.settingFrame.winfo_ismapped():
-            self.settingFrame.grid_remove()
-        else:
-            self.settingFrame.grid()
 
 class CheckboxFilterFrame(tk.Frame):
     """creates a frame containing a set of otions
