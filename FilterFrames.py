@@ -31,12 +31,12 @@ class EmptyFilterFrame(tk.Frame):
         print("onFilterSelect: ",self.onFilterSelect)
         for action in self.onFilterSelect: action()
 
-        self.headFrame = tk.Frame(self)
-        self.headFrame.pack(anchor="n", expand=True, fill=tk.X)
-        self.label = tk.Label(self.headFrame, text=self.newFilterTkVar.get())
-        self.label.pack(anchor="w")
-        self.removeButton = tk.Button(self.headFrame, text="remove", command = self.destroy)
-        self.removeButton.pack(anchor="e")
+        self.label = tk.Label(self, text=self.newFilterTkVar.get())
+        self.label.grid(row=0, column=0, sticky="NW")
+        self.removeButton = tk.Button(self, text="remove", command = self.destroy)
+        self.removeButton.grid(row=0, column=2, sticky="E")
+        self.hideButton = tk.Button(self, text="hide", command = self.hide)
+        self.hideButton.grid(row=0, column=1, sticky="E")
 
         if isinstance(self.filter, F.WhitelistFilterChild):
             self.settingFrame =CheckboxFilterFrame(
@@ -54,7 +54,7 @@ class EmptyFilterFrame(tk.Frame):
             self.onFilterUpdate.append(lambda : self.filter.assignWhitelist(self.settingFrame.checkedOptions()))
         elif isinstance(self.filter, F.Filter):
             self.settingFrame=tk.Frame(self)
-        self.settingFrame.pack(expand= True, fill=tk.X, anchor="s")
+        self.settingFrame.grid(sticky="E")
 
     def updatedFilterSettings(self):
         print("updateFilterSettings", "Delegate: ",self.onFilterUpdate)
@@ -64,6 +64,13 @@ class EmptyFilterFrame(tk.Frame):
         if hasattr(self, "filter"):
             self.filter.delete()
         super().destroy()
+
+    def hide(self):
+        if self.settingFrame.winfo_ismapped:
+            self.settingFrame.grid_remove()
+        else:
+            print("not mapped")
+            seld.settingFrame.grid()
 
 class CheckboxFilterFrame(tk.Frame):
     """creates a frame containing a set of otions

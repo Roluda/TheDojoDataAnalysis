@@ -86,7 +86,7 @@ class BarDiagramFrame(tk.Frame):
         self.ax.clear()
         rects = self.ax.bar(x, drawDict.values(), width, label=drawDict.keys())
         self.ax.set_ylabel("sum")
-        self.ax.set_title("total of "+self.attributeTkVar.get())
+        self.ax.set_title("total of "+self.controller.filterOutlet.root.tag)
         self.ax.set_xticks(x)
         self.ax.set_xticklabels(drawDict.keys(), rotation=35, ha ="right")
         self.fig.tight_layout()
