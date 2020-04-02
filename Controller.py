@@ -1,6 +1,7 @@
 import Data
 import Filters
 import numpy
+import dateutil 
 
 class FilterController:
     def __init__(self):
@@ -66,12 +67,59 @@ def flatElementBoolAttributes(element):
     recursiveAdd(element, attributes)
     return attributes
 
+def flatElementTimeAttributes(element):
+    """returns a dictionary which map 
+    element and child element attributes 
+    to value, only considers time formats"""
+    def recursiveAdd(ele, dictionary):
+        for key, value in ele.attrib.items():
+            try:
+                dateutil.parse(value, True)
+                dictionary[ele.tag+" "+key]=value
+            except:
+                pass
+        if len(list(ele)) > 0:
+            for child in ele:
+                recursiveAdd(child, dictionary)
+    attributes={}
+    recursiveAdd(element, attributes)
+    return attributes
+
+def flatElementLanguageAttributes(element):
+    """returns a dictionary which map 
+    element and child element attributes 
+    to value, only considers language
+    (no bools, floats, int, time formats)
+    """
+    def recursiveAdd(ele, dictionary):
+        for key, value in ele.attrib.items():
+            try:
+                dateutil.parse(value, False)
+                break
+            except:
+                pass
+            try:
+                float(value)
+                break
+            except:
+                pass
+            if value in ["true","false","True","False","TRUE","FALSE"]:
+                break
+            dictionary[ele.tag+" "+key]=value
+        if len(list(ele)) > 0:
+            for child in ele:
+                recursiveAdd(child, dictionary)
+    attributes={}
+    recursiveAdd(element, attributes)
+    return attributes
+
 def uniqueAttributesInData(elements):
     """takes a list of elements and returns a set
     with uique attributes"""
     uniqueAttributes = set()
     for element in elements:
-        uniqueAttributes.union(flatElement(element).keys())
+        for key in flatElement(element).keys():
+            uniqueAttributes.add(key)
     return uniqueAttributes
 
 def uniqueNumAttributesInData(elements):
@@ -79,7 +127,8 @@ def uniqueNumAttributesInData(elements):
     with unique numeric attributes"""
     uniqueAttributes = set()
     for element in elements:
-        uniqueAttributes.union(flatElementNumAttributes(element).keys())
+        for key in flatElementNumAttributes(element).keys():
+            uniqueAttributes.add(key)
     return uniqueAttributes
 
 def uniqueBoolAttributesInData(elements):
@@ -87,5 +136,24 @@ def uniqueBoolAttributesInData(elements):
     with unique boolean attributes"""
     uniqueAttributes = set()
     for element in elements:
-        uniqueAttributes.union(flatElementBoolAttributes(element).keys())
+        for key in flatElementBoolAttributes(element).keys():
+            uniqueAttributes.add(key)
+    return uniqueAttributes
+
+def uniqueTimeAttributesInData(elements):
+    """takes a list of elements and returns a set
+    with unique time attributes"""
+    uniqueAttributes = set()
+    for element in elements:
+        for key in flatElementTimeAttributes(element).keys():
+            uniqueAttributes.add(key)
+    return uniqueAttributes
+
+def uniqueLanguageAttributesInData(elements):
+    """takes a list of elements and returns a set
+    with unique language attributes, i.e. names"""
+    uniqueAttributes = set()
+    for element in elements:
+        for key in flatElementLanguageAttributes(element).keys():
+            uniqueAttributes.add(key)
     return uniqueAttributes

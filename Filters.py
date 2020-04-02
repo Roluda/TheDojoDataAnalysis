@@ -64,6 +64,7 @@ class WhitelistFilterChild(Filter):
         self.whitelist = whitelist
 
     def assignWhitelist(self, whitelist):
+        print("got assignment")
         self.whitelist = whitelist
 
     def potentialSet(self):
@@ -93,6 +94,7 @@ class WhitelistFilter(Filter):
         self.whitelist = whitelist
 
     def assignWhitelist(self, whitelist):
+        print("got assignment")
         self.whitelist = whitelist
 
     def potentialSet(self):

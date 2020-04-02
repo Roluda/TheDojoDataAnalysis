@@ -11,9 +11,11 @@ presets={
 }
 
 class EmptyFilterFrame(tk.Frame):
-    def __init__(self, master, onFilterSelect = [lambda filter : None], cnf={}, **kw):
+    def __init__(self, master, controller, cnf={}, **kw):
         super().__init__(master=master, cnf=cnf, **kw)
-        self.onFilterSelect = onFilterSelect
+        self.controller = controller
+        self.onFilterSelect = []
+        self.onFilterUpdate = []
 
         self.newFilterTkVar = tk.StringVar(self)
         self.newFilterTkVar.set("Add Filter..")
@@ -25,7 +27,9 @@ class EmptyFilterFrame(tk.Frame):
     def _createNewFilterCallback(self, *args):
         self.newFilterMenu.pack_forget()
         self.filter = presets[self.newFilterTkVar.get()]()
-        for action in self.onFilterSelect: action(self.filter)
+        self.controller.addFilter(self.filter)
+        print("onFilterSelect: ",self.onFilterSelect)
+        for action in self.onFilterSelect: action()
 
         self.headFrame = tk.Frame(self)
         self.headFrame.pack(anchor="n", expand=True, fill=tk.X)
@@ -38,19 +42,23 @@ class EmptyFilterFrame(tk.Frame):
             self.settingFrame =CheckboxFilterFrame(
                 self,
                 self.filter.potentialSet(), 
-                update=lambda: self.filter.assignWhitelist(self.settingFrame.checkedOptions())
+                update= lambda: self.updatedFilterSettings()
             )
+            self.onFilterUpdate.append(lambda : self.filter.assignWhitelist(self.settingFrame.checkedOptions()))
         elif isinstance(self.filter, F.Filter):
             self.settingFrame=CheckboxFilterFrame(
                 self,
                 self.filter.potentialSet(), 
-                update=lambda: self.filter.assignWhitelist(self.settingFrame.checkedOptions())
+                update= lambda: self.updatedFilterSettings()
             )
+            self.onFilterUpdate.append(lambda : self.filter.assignWhitelist(self.settingFrame.checkedOptions()))
         elif isinstance(self.filter, F.Filter):
             self.settingFrame=tk.Frame(self)
         self.settingFrame.pack(expand= True, fill=tk.X, anchor="s")
 
-
+    def updatedFilterSettings(self):
+        print("updateFilterSettings", "Delegate: ",self.onFilterUpdate)
+        for action in self.onFilterUpdate: action()
 
     def destroy(self):
         if hasattr(self, "filter"):
@@ -61,12 +69,12 @@ class CheckboxFilterFrame(tk.Frame):
     """creates a frame containing a set of otions
 
     get checkedOptions for a set of selected otions"""
-    def __init__(self, master, options, update = lambda *args : None):
+    def __init__(self, master, options, update = [lambda *args : None]):
         super().__init__(master)
         self.update = update
         self.checkedTkVariable = {}
         for (index, option) in enumerate(options):
-            boolVar = tk.Variable(self)
+            boolVar = tk.BooleanVar(self)
             boolVar.set(False)
             boolVar.trace('w', self.updatedOptions)
             self.checkedTkVariable[option] = boolVar
@@ -79,6 +87,6 @@ class CheckboxFilterFrame(tk.Frame):
     def checkedOptions(self):
         newSet=set()
         for (option, value) in self.checkedTkVariable.items():
-            newSet.add(option) if value.get() else None
+            if value.get():
+                newSet.add(option)
         return newSet
-
