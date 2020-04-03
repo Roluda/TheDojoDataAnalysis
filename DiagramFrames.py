@@ -37,7 +37,6 @@ class EmptyDiagramFrame(tk.Frame):
         self.diagramFrame.grid(sticky="SE")
 
     def refresh(self):
-        print("refreshing diagram")
         for action in self.onRefresh: action()
 
 
@@ -45,8 +44,7 @@ class BarDiagramFrame(tk.Frame):
     def __init__(self, master=None, controller = None, cnf={}, **kw):
         super().__init__(master=master, cnf=cnf, **kw)
         self.controller = controller
-        self.attributeSet = C.uniqueLanguageAttributesInData(self.controller.filterOutlet.output())
-        print(self.attributeSet)
+        self.attributeSet = C.uniqueLanguageAttributesInData(self.controller.treeOutput())
         self.attributeTkVar = tk.StringVar(self)
         self.attributeTkVar.set("select attribut")
         self.attributeTkVar.trace('w', self.refresh)
@@ -66,29 +64,83 @@ class BarDiagramFrame(tk.Frame):
         self.canvas.get_tk_widget().grid(row=1, sticky="NE")
 
     def refresh(self, *args):
+        self.ax.clear()
         self.updateFigure()
         self.canvas.draw()
 
     def updateFigure(self):
         drawDict = {}
-        print("updated diagram with elements: ", len(self.controller.filterOutlet.output()))
-        for element in self.controller.filterOutlet.output():
-            flat = C.flatElement(element)
-            if self.attributeTkVar.get() in flat.keys():
-                if flat[self.attributeTkVar.get()] not in drawDict.keys():
-                    drawDict[flat[self.attributeTkVar.get()]] = 1
-                else:
-                    drawDict[flat[self.attributeTkVar.get()]] += 1
+        try:
+            for element in self.controller.treeOutput():
+                flat = C.flatElement(element)
+                if self.attributeTkVar.get() in flat.keys():
+                    if flat[self.attributeTkVar.get()] not in drawDict.keys():
+                        drawDict[flat[self.attributeTkVar.get()]] = 1
+                    else:
+                        drawDict[flat[self.attributeTkVar.get()]] += 1
+            x = np.arange(len(drawDict))
+            width=.35
+            rects = self.ax.bar(x, drawDict.values(), width, label=drawDict.keys())
+            self.ax.set_ylabel("Oilcatz rules")
+            self.ax.set_title("total of "+self.controller.root.tag)
+            self.ax.set_xticks(x)
+            self.ax.set_xticklabels(drawDict.keys(), rotation=35, ha ="right")
+            self.fig.tight_layout()
+        except:
+            pass
 
-        x = np.arange(len(drawDict))
-        width=.35
 
+
+class HeatDiagramFrame(tk.Frame):
+    def __init__(self, master=None, controller = None, cnf={}, **kw):
+        super().__init__(master=master, cnf=cnf, **kw)
+        self.controller = controller
+        self.attributeSet = C.uniqueNumAttributesInData(self.controller.treeOutput())
+
+        self.attributeXTkVar = tk.StringVar(self)
+        self.attributeXTkVar.set("select attribut X")
+        self.attributeXTkVar.trace('w', self.refresh)
+        self.attributeXSelect = tk.OptionMenu(self, self.attributeXTkVar, *self.attributeSet)
+        self.attributeXSelect.grid(row = 2, column =0, sticky="S")
+
+        self.attributeYTkVar = tk.StringVar(self)
+        self.attributeYTkVar.set("select attribut Y")
+        self.attributeYTkVar.trace('w', self.refresh)
+        self.attributeYSelect = tk.OptionMenu(self, self.attributeYTkVar, *self.attributeSet)
+        self.attributeYSelect.grid(row = 2, column =1, sticky="S")
+
+        self.fig, self.ax = mpl.subplots()
+        self.updateFigure()
+
+        self.canvas = FigureCanvasTkAgg(self.fig, master=self)
+        self.canvas.draw()
+        self.canvas.get_tk_widget().grid(row=0, sticky="NE")
+        self.toolbarFrame = tk.Frame(self)
+        self.toolbar = NavigationToolbar2Tk(self.canvas, self.toolbarFrame)
+        self.toolbar.update()
+        self.toolbarFrame.grid()
+        self.canvas.get_tk_widget().grid(row=1, sticky="NE")
+
+    def refresh(self, *args):
         self.ax.clear()
-        rects = self.ax.bar(x, drawDict.values(), width, label=drawDict.keys())
-        self.ax.set_ylabel("sum")
-        self.ax.set_title("total of "+self.controller.filterOutlet.root.tag)
-        self.ax.set_xticks(x)
-        self.ax.set_xticklabels(drawDict.keys(), rotation=35, ha ="right")
-        self.fig.tight_layout()
+        self.updateFigure()
+        self.canvas.draw()
 
-
+    def updateFigure(self):
+        pointsX=[]
+        pointsY=[]
+        try:
+            for element in self.controller.treeOutput():
+                flat = C.flatElement(element)
+                pointsX.append(float(flat[self.attributeXTkVar.get()]))
+                pointsY.append(float(flat[self.attributeYTkVar.get()]))
+            x = np.arange(len(drawDict))
+            width=.35
+            rects = self.ax.bar(x, drawDict.values(), width, label=drawDict.keys())
+            self.ax.set_ylabel("sum")
+            self.ax.set_title("total of "+self.controller.filterOutlet.root.tag)
+            self.ax.set_xticks(x)
+            self.ax.set_xticklabels(drawDict.keys(), rotation=35, ha ="right")
+            self.fig.tight_layout()
+        except:
+            pass

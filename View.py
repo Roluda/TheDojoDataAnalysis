@@ -26,8 +26,10 @@ class MainWindow(tk.Tk):
         self.importFrame = ImportFrame(self.settingsParent, self.importXmlCallback, relief ="raised", borderwidth =2)
         self.importFrame.pack(expand=True, anchor="n", fill=tk.X)
         
-        #self.debugButton = tk.Button(self.settingsParent, text="count elements", command= lambda: print(len(self.controller.filterOutlet.output())))
+        #self.debugButton = tk.Button(self.settingsParent, text="ping filter chain", command= lambda: self.controller.root.pingDown(0))
         #self.debugButton.pack()
+        #self.debugButton2 = tk.Button(self.settingsParent, text="count chain output", command= lambda: print(len(self.controller.treeOutput())))
+        #self.debugButton2.pack()
         self.mainloop()
    
     def importXmlCallback(self):
@@ -41,11 +43,12 @@ class MainWindow(tk.Tk):
     def selectChangeCallback(self):
         self.deleteFilters()
         self.deleteDiagrams()
-        self.controller.newFilterOutlet(tag = self.dataSelectFrame.dataSelectTkVar.get()),
+        self.controller.newFilterTree(tag = self.dataSelectFrame.dataSelectTkVar.get()),
         self.addEmptyFilterFrame()
         self.addEmptyDiagramFrame()
         
     def addEmptyFilterFrame(self, *args):
+        print("addEmptyFilterFrame")
         newFrame = FF.EmptyFilterFrame(self.settingsParent,self.controller, relief = "raised", borderwidth=2)
         newFrame.pack(expand=True, anchor="n", fill=tk.X)
         newFrame.onFilterSelect.append(self.addEmptyFilterFrame)

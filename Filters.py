@@ -19,7 +19,6 @@ class Filter:
 
     def attach(self, filter):
         """adds the filter as child, previous child will be attached to new child"""
-        print("attaching: ", filter, " to ", self)
         if self.child is not None:
             self.child.parent = filter
         self.child=filter
@@ -31,9 +30,32 @@ class Filter:
             self.parent.child = self.child
         if self.child is not None:
             self.child.parent = self.parent
+        self.parent = None
+        self.child = None
+
+    def getRoot(self):
+        if self.parent is None:
+            return self
+        else:
+            return self.parent.getRoot()
+
+    def getLeaf(self):
+        if self.child is None:
+            return self
+        else:
+            return self.child.getLeaf()
+
+    def pingUp(self, inc):
+        print(inc, self)
+        if self.parent is not None:
+            self.parent.pingUp(inc +1)
+
+    def pingDown(self, inc):
+        print(inc, self)
+        if self.child is not None:
+            self.child.pingDown(inc +1)
 
     def output(self):
-        print("filter: ", self, " parent: ", self.parent)
         self.data = self.parent.output() if self.parent is not None else self.data
         return self.data
 
@@ -53,37 +75,6 @@ class TagFilter(Filter):
         return elements
 
 
-class WhitelistFilterChild(Filter):
-    """removes all elements without a "tag" child with "attribute" which value is not 
-    contained by "whitelist"
-    """
-    def __init__(self, tag, attribute, whitelist = set(""), parent = None, data = None):
-        super().__init__(parent=parent, data=data)
-        self.tag = tag
-        self.attribute = attribute
-        self.whitelist = whitelist
-
-    def assignWhitelist(self, whitelist):
-        print("got assignment")
-        self.whitelist = whitelist
-
-    def potentialSet(self):
-        """returns a set of strings that could effectively be used for filtering"""
-        whiteSet = set()
-        for element in self.root.output():
-            for candidate in element.findall(".//"+self.tag):
-                whiteSet.add(candidate.get(self.attribute))
-        return whiteSet
-
-    def output(self):
-        self.data = self.parent.output() if self.parent is not None else self.data
-        elements =[]
-        for element in self.parent.output():
-            value = element.find(self.tag).get(self.attribute)
-            if value is not None and value in self.whitelist:
-                elements.append(element)
-        return elements
-
 class WhitelistFilter(Filter):
     """removes all elements without a with "attribute" which value is not 
     contained by "whitelist"
@@ -94,7 +85,6 @@ class WhitelistFilter(Filter):
         self.whitelist = whitelist
 
     def assignWhitelist(self, whitelist):
-        print("got assignment")
         self.whitelist = whitelist
 
     def potentialSet(self):
@@ -112,3 +102,144 @@ class WhitelistFilter(Filter):
             if value is not None and value in self.whitelist:
                 elements.append(element)
         return elements
+
+class WhitelistFilterChild(Filter):
+    """removes all elements without a "tag" child with "attribute" which value is not 
+    contained by "whitelist"
+    """
+    def __init__(self, tag, attribute, whitelist = set(""), parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.tag = tag
+        self.attribute = attribute
+        self.whitelist = whitelist
+
+    def assignWhitelist(self, whitelist):
+        self.whitelist = whitelist
+
+    def potentialSet(self):
+        """returns a set of strings that could effectively be used for filtering"""
+        whiteSet = set()
+        for element in self.root.output():
+            for candidate in element.iter(self.tag):
+                whiteSet.add(candidate.get(self.attribute))
+        return whiteSet
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = element.find(".//"+self.tag).get(self.attribute)
+            if value is not None and value in self.whitelist:
+                elements.append(element)
+        return elements
+
+class BoolFilter(Filter):
+    """removes all elements without a with "attribute" which value is not 
+    the same as this ones by "whitelist"
+    """
+    def __init__(self, attribute, bool = True, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.attribute = attribute
+        self.bool = bool
+
+    def assignBool(self, bool):
+        self.bool = bool
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = element.get(self.attribute)
+            if self.bool and value in ["True", "true", "TRUE"]:
+                elements.append(element)
+            elif not self.bool and value in ["fasle", "False", "FALSE"]:
+                elements.append(element)
+        return elements
+
+class BoolFilterChild(Filter):
+    """removes all elements without a "tag" child with "attribute" which value is not 
+    the same as this bool"
+    """
+    def __init__(self, tag, attribute, bool=False, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.tag = tag
+        self.attribute = attribute
+        self.bool = bool
+
+    def assignBool(self, bool):
+        self.bool = bool
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = element.find(".//"+self.tag).get(self.attribute)
+            if self.bool and value in ["True", "true", "TRUE"]:
+                elements.append(element)
+            elif not self.bool and value in ["false", "False", "FALSE"]:
+                elements.append(element)
+        return elements
+
+class RangeFilter(Filter):
+    """removes all elements without "attribute" which value is not 
+    inside Range
+    """
+    def __init__(self, attribute, min =0, max=0, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.attribute = attribute
+        self.mini = min
+        self.maxi = max
+
+    def assignRange(self, min, max):
+        self.mini = min
+        self.maxi = max
+
+    def potentialRange(self):
+        """returns a min, max tupel that could be used for filtering"""
+        values = []
+        for candidate in self.root.output():
+            values.append(float(candidate.get(self.attribute)))
+        return (min(values), max(values))
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = float(element.get(self.attribute))
+            if value >= self.mini and value <= self.maxi:
+                elements.append(element)
+        return elements
+
+class RangeFilterChild(Filter):
+    """removes all elements without a "tag" child with "attribute" which value is not 
+    inside min max range
+    """
+    def __init__(self, tag, attribute, min=0, max=0, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.tag = tag
+        self.attribute = attribute
+        self.min = min
+        self.max = max
+
+    def assignRange(self, min, max):
+        self.min = min
+        self.max = max
+
+    def potentialRange(self):
+        """returns a min, max tupel that could be used for filtering"""
+        values = []
+        for element in self.root.output():
+            for candidate in element.iter(self.tag):
+                values.append(float(candidate.get(self.attribute)))
+        return (min(values), max(values))
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = float(element.find(".//"+self.tag).get(self.attribute))
+            if value >= self.min and value <= self.max:
+                elements.append(element)
+        return elements
+
+
