@@ -28,23 +28,21 @@ def possibleFilters(data):
     for attributes in uniqueLanguageAttributesInData(data):
         tag, _ ,att = attributes.rpartition('/')
         if tag[0] == "0":
-            print("whitelistFilter for:", tag[1:], att)
-            filters["Whitelist "+att] = Filters.WhitelistFilter(att)
+            filters["Whitelist "+tag+"/"+att] = Filters.WhitelistFilter(att)
         else:
-            print("whitelistFilterChild for", tag[1:], att)
-            filters["Whitelist "+tag[1:]+"/"+att] = Filters.WhitelistFilterChild(tag[1:], att)
+            filters["Whitelist "+tag+"/"+att] = Filters.WhitelistFilterChild(tag[1:], att)
     for attributes in uniqueBoolAttributesInData(data):
         tag, _, att = attributes.rpartition('/')
         if tag[0] == "0":
-            filters["Bool "+att] = Filters.BoolFilter(att)
+            filters["Bool "+tag+"/"+att] = Filters.BoolFilter(att)
         else:
-            filters["Bool "+tag[1:]+"/"+att] = Filters.BoolFilterChild(tag[1:], att)
+            filters["Bool "+tag+"/"+att] = Filters.BoolFilterChild(tag[1:], att)
     for attributes in uniqueNumAttributesInData(data):
         tag, _, att = attributes.rpartition('/')
         if tag[0] == "0":
-            filters["Range "+att] = Filters.RangeFilter(att)
+            filters["Range "+tag+"/"+att] = Filters.RangeFilter(att)
         else:
-            filters["Range "+tag[1:]+"/"+att] = Filters.RangeFilterChild(tag[1:], att)
+            filters["Range "+tag+"/"+att] = Filters.RangeFilterChild(tag[1:], att)
     return filters
 
 

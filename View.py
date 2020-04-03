@@ -7,7 +7,7 @@ import Controller as C
 
 font="Helvetica 12"
 fontBold="Helvetica 12 bold"
-datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident"}
+datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident","room"}
 
 class MainWindow(tk.Tk):
     """the main Window"""
@@ -59,7 +59,7 @@ class MainWindow(tk.Tk):
         newDiagram = DF.EmptyDiagramFrame(self.diagramParent, controller=self.controller, relief ="raised", borderwidth=2)
         newDiagram.onCreateDiagram.append(self.addEmptyDiagramFrame)
         self.onDeleteDiagrams.append(newDiagram.destroy)
-        #self.onUpdateDiagrams.append(newDiagram.refresh)
+        self.onUpdateDiagrams.append(newDiagram.refresh)
         newDiagram.pack(expand=True, side=tk.LEFT, fill=tk.Y)
 
     def updateDiagrams(self, *args):
