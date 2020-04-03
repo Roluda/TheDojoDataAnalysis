@@ -2,7 +2,7 @@ import xml.etree.ElementTree as et
 from io import StringIO 
 
 class Data:
-    """an element tree of valid xml files"""
+    """an element tree of xml files"""
     def __init__(self):
         self.database = []
 
