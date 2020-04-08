@@ -5,7 +5,7 @@ import numpy as np
 import tkinter as tk
 import Controller as C
 
-diagrams = {"Bar Diagram","Scatter Diagram"}
+diagrams = {"Bar Diagram","Scatter Diagram","Pie Diagram"}
 
 class EmptyDiagramFrame(tk.Frame):
     def __init__(self, master=None, controller=None, cnf={}, **kw):
@@ -186,19 +186,34 @@ class PieDiagramFrame(tk.Frame):
         try:
             for element in self.controller.treeOutput():
                 flat = C.flatElement(element)
-                sum = len(self.controller.treeOutput())
                 if self.attributeTkVar.get() in flat.keys():
                     if flat[self.attributeTkVar.get()] not in drawDict.keys():
                         drawDict[flat[self.attributeTkVar.get()]] = 1
                     else:
                         drawDict[flat[self.attributeTkVar.get()]] += 1
 
-            self.ax.autoscale(True)
-            self.ax.pie(drawDict.values(), labels=drawDict.keys(), autopct="%1.1%%")
-
-            #self.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            sortedDict = {k:v for k, v in sorted(drawDict.items(), key=lambda item:item[1], reverse=True)}
+            wedges, texts, autotexts = self.ax.pie(
+                sortedDict.values(),
+                labels=sortedDict.keys(), 
+                counterclock=False,
+                startangle=90, 
+                autopct="%1.0f%%",
+                pctdistance=0.8,
+                labeldistance=None,
+            )
+            self.ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
             self.ax.set_title("relatives of "+self.controller.root.tag)
-            #self.fig.tight_layout()
 
-        except:
-            pass
+            self.ax.legend(
+                wedges, 
+                sortedDict.keys(),
+                loc="center left",
+                bbox_to_anchor=(1, 0, 0.5, 1)
+            )
+            self.fig.tight_layout()
+
+        except Exception as e:
+            print(type(e))
+            print(e.args)
+            print(e)
