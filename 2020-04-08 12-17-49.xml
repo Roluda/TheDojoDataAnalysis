@@ -1,0 +1,1207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="prettify-log.xsl"?>
+<database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="0.1" gameVersion="0.3.1" xmlns="http://schema.slothsoft.net/trialoftwo/database">
+  <sessions>
+    <session start="2020-04-08T12:17:49.9333552+02:00" end="2020-04-08T12:19:38.9098188+02:00" scene="SCENE_Testing_Robin" playerOneName="P_Entity_Character_DebugDude_Player_1(Clone)" playerTwoName="P_Entity_Character_DebugDude_Player_2(Clone)">
+      <rooms>
+        <room name="RoomConfig_01_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_06_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_09_01" roomEntered="2020-04-08T12:17:52.4353577+02:00" battleStarted="2020-04-08T12:17:52.4353577+02:00" roomCleared="2020-04-08T12:17:52.4353577+02:00" isCleared="true" isGameOver="false" />
+        <room name="RoomConfig_08_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_08_02" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_02_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_03_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_03_02" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_07_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_10_01" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_04_01" roomEntered="2020-04-08T12:18:51.4633453+02:00" battleStarted="2020-04-08T12:18:52.6210816+02:00" isCleared="false" isGameOver="false" />
+        <room name="RoomConfig_05_01" isCleared="false" isGameOver="false" />
+      </rooms>
+      <incidents>
+        <spawnIncident time="2020-04-08T12:17:52.4014668+02:00">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" localPositionX="-4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="8" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" localPositionX="-4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" localPositionX="4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          </players>
+        </spawnIncident>
+        <spawnIncident time="2020-04-08T12:17:52.420416+02:00">
+          <entity name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" localPositionX="4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="8" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" localPositionX="-4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" localPositionX="4" localPositionY="0.5" localPositionZ="-5" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          </players>
+        </spawnIncident>
+        <moveIncident time="2020-04-08T12:18:00.2451419+02:00" move="EM_LockOn_SwitchTarget" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05146432" localPositionZ="-5.35785627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.440266" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05146432" localPositionZ="-5.35785627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999285" localPositionY="0.0441186428" localPositionZ="-4.99993324" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:00.3987669+02:00" move="EM_LockOn_SwitchTarget" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166018" localPositionY="0.0419303179" localPositionZ="-5.357854" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.440273" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166018" localPositionY="0.0419303179" localPositionZ="-5.357854" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999857" localPositionY="0.0556229353" localPositionZ="-4.99992752" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:00.5573589+02:00" move="EM_LockOn_SwitchTarget" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166041" localPositionY="0.0473763943" localPositionZ="-5.35785055" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.440275" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166041" localPositionY="0.0473763943" localPositionZ="-5.35785055" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0574113131" localPositionZ="-4.999919" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:00.7608001+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05522275" localPositionZ="-5.357841" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.44027328" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05522275" localPositionZ="-5.357841" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0430041552" localPositionZ="-4.99991655" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:00.7757565+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05522275" localPositionZ="-5.357841" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.44027328" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43165922" localPositionY="0.05522275" localPositionZ="-5.357841" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0430041552" localPositionZ="-4.99991655" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:00.926355+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166184" localPositionY="0.0659878254" localPositionZ="-5.357839" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.44027567" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.43166184" localPositionY="0.0659878254" localPositionZ="-5.357839" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999976" localPositionY="0.04486835" localPositionZ="-4.999914" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.0969122+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.82382321" localPositionY="0.08708024" localPositionZ="-5.357823" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="6.833204" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.82382321" localPositionY="0.08708024" localPositionZ="-5.357823" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.00000048" localPositionY="0.05796063" localPositionZ="-4.999914" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.2145928+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.481018" localPositionY="0.09644675" localPositionZ="-5.357807" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="6.49089146" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.481018" localPositionY="0.09644675" localPositionZ="-5.357807" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999952" localPositionY="0.0536270142" localPositionZ="-4.999917" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.2814056+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.24865222" localPositionY="0.0623300076" localPositionZ="-5.357803" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="6.258892" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.24865222" localPositionY="0.0623300076" localPositionZ="-5.357803" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999928" localPositionY="0.05074668" localPositionZ="-4.999918" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.4649147+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.75620711" localPositionY="0.07506299" localPositionZ="-5.357803" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="5.767319" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.75620711" localPositionY="0.07506299" localPositionZ="-5.357803" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999738" localPositionY="0.0429344177" localPositionZ="-4.999918" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.6474524+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.08231068" localPositionY="0.07799435" localPositionZ="-5.35775566" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="5.094893" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.08231068" localPositionY="0.07799435" localPositionZ="-5.35775566" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0552001" localPositionZ="-4.99991369" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.6603943+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.08231068" localPositionY="0.07799435" localPositionZ="-5.35775566" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="5.094893" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.08231068" localPositionY="0.07799435" localPositionZ="-5.35775566" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0552001" localPositionZ="-4.99991369" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:01.8246414+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.602822542" localPositionY="0.0435088873" localPositionZ="-5.35775042" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.616711" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.602822542" localPositionY="0.0435088873" localPositionZ="-5.35775042" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0556727648" localPositionZ="-4.99991035" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.0101835+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.101275712" localPositionY="0.0248543024" localPositionZ="-5.357751" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.116858" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.101275712" localPositionY="0.0248543024" localPositionZ="-5.357751" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.04396081" localPositionZ="-4.999901" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.2056141+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.6227187" localPositionY="0.0350269079" localPositionZ="-5.35773373" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.39618373" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.6227187" localPositionY="0.0350269079" localPositionZ="-5.35773373" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999833" localPositionY="0.04772103" localPositionZ="-4.999899" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.2325443+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.681019843" localPositionY="0.0354975462" localPositionZ="-5.357735" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.33821321" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.681019843" localPositionY="0.0354975462" localPositionZ="-5.357735" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999857" localPositionY="0.0490682125" localPositionZ="-4.999899" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.3941143+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.09206641" localPositionY="0.04616809" localPositionZ="-5.357737" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.92986465" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.09206641" localPositionY="0.04616809" localPositionZ="-5.357737" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999738" localPositionY="0.0556685925" localPositionZ="-4.99990273" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.5696409+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.31296015" localPositionY="0.0523437262" localPositionZ="-5.357714" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.7107563" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.31296015" localPositionY="0.0523437262" localPositionZ="-5.357714" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.999998" localPositionY="0.0493048429" localPositionZ="-4.99990654" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:02.7900609+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.21590829" localPositionY="0.0366085768" localPositionZ="-5.35773039" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.81961989" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.21590829" localPositionY="0.0366085768" localPositionZ="-5.35773039" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.99999857" localPositionY="0.0466573238" localPositionZ="-4.99990559" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.0235755+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.839748" localPositionY="0.0388504267" localPositionZ="-5.357747" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.21418357" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.839748" localPositionY="0.0388504267" localPositionZ="-5.357747" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.05921662" localPositionZ="-4.999897" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.0814401+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.91360784" localPositionY="0.038990736" localPositionZ="-5.35776329" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.14381742" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.91360784" localPositionY="0.038990736" localPositionZ="-5.35776329" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4" localPositionY="0.0562759638" localPositionZ="-4.999894" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.2749049+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.05695271" localPositionY="0.154436588" localPositionZ="-5.518832" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.19358385" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.05695271" localPositionY="0.154436588" localPositionZ="-5.518832" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.08787966" localPositionY="0.0423305035" localPositionZ="-4.91730738" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.4908367+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.09316778" localPositionY="0.245462775" localPositionZ="-5.8128686" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.52409077" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.09316778" localPositionY="0.245462775" localPositionZ="-5.8128686" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.250924" localPositionY="0.0501334667" localPositionZ="-4.821681" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.5167685+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.097837" localPositionY="0.231703281" localPositionZ="-5.82990837" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.53170824" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.097837" localPositionY="0.231703281" localPositionZ="-5.82990837" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.25092363" localPositionY="0.053231" localPositionZ="-4.8216815" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.706261+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.21841145" localPositionY="0.05569172" localPositionZ="-5.94003534" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.52209854" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.21841145" localPositionY="0.05569172" localPositionZ="-5.94003534" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.25092363" localPositionY="0.05361688" localPositionZ="-4.821687" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.9226825+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.004941" localPositionY="0.109404445" localPositionZ="-5.93999863" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.14504254" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.004941" localPositionY="0.109404445" localPositionZ="-5.93999863" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.25092554" localPositionY="0.0441468954" localPositionZ="-4.82169" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:03.9615813+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.062327" localPositionY="0.09976578" localPositionZ="-5.939997" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.13409889" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.062327" localPositionY="0.09976578" localPositionZ="-5.939997" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.25092554" localPositionY="0.04388678" localPositionZ="-4.82169" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:04.1570605+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.460889" localPositionY="0.0523501635" localPositionZ="-6.07127476" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.32608259" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.460889" localPositionY="0.0523501635" localPositionZ="-6.07127476" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209253" localPositionY="0.0562090874" localPositionZ="-4.769286" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:04.3684916+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.08006" localPositionY="0.0283676386" localPositionZ="-6.10855627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.59748447" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.08006" localPositionY="0.0283676386" localPositionZ="-6.10855627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209259" localPositionY="0.05269575" localPositionZ="-4.76927948" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:04.5322738+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.630247" localPositionY="0.0363794565" localPositionZ="-6.108312" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.95249343" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.630247" localPositionY="0.0363794565" localPositionZ="-6.108312" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209261" localPositionY="0.04257834" localPositionZ="-4.769272" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:04.619042+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.89438534" localPositionY="0.0406206846" localPositionZ="-6.10742569" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.15180779" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.89438534" localPositionY="0.0406206846" localPositionZ="-6.10742569" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209261" localPositionY="0.0426696539" localPositionZ="-4.76928043" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:04.8228536+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="6.2485857" localPositionY="0.0513468981" localPositionZ="-6.106309" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.438544" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="6.2485857" localPositionY="0.0513468981" localPositionZ="-6.106309" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209259" localPositionY="0.05686617" localPositionZ="-4.769281" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.0192284+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.951336" localPositionY="0.0477226973" localPositionZ="-5.57704973" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.92024016" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.951336" localPositionY="0.0477226973" localPositionZ="-5.57704973" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209259" localPositionY="0.0513273478" localPositionZ="-4.769281" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.2539385+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.597932" localPositionY="0.0379192829" localPositionZ="-5.0354805" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.413964" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.597932" localPositionY="0.0379192829" localPositionZ="-5.0354805" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209262" localPositionY="0.0445421934" localPositionZ="-4.769229" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.383591+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.50367" localPositionY="0.0391446352" localPositionZ="-4.9072957" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.30175257" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.50367" localPositionY="0.0391446352" localPositionZ="-4.9072957" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.209262" localPositionY="0.05284667" localPositionZ="-4.769213" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.4583949+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.43545437" localPositionY="0.03859341" localPositionZ="-4.81601" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.22708356" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.43545437" localPositionY="0.03859341" localPositionZ="-4.81601" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="4.20926428" localPositionY="0.0587301254" localPositionZ="-4.769193" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.6807971+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.17816925" localPositionY="0.101936579" localPositionZ="-4.84889" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.23442674" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.17816925" localPositionY="0.101936579" localPositionZ="-4.84889" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.9558754" localPositionY="0.170310974" localPositionZ="-4.676243" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.8124469+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.394027" localPositionY="0.119792581" localPositionZ="-5.18925858" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.70006526" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.394027" localPositionY="0.119792581" localPositionZ="-5.18925858" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.82513022" localPositionY="0.4135461" localPositionZ="-4.53444242" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:05.9092061+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.54866171" localPositionY="0.04351008" localPositionZ="-5.433123" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.0220232" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.54866171" localPositionY="0.04351008" localPositionZ="-5.433123" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.76888847" localPositionY="0.43370986" localPositionZ="-4.47344351" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.1595235+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.881294" localPositionY="0.09096587" localPositionZ="-5.54358244" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.66445291" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.881294" localPositionY="0.09096587" localPositionZ="-5.54358244" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.68681574" localPositionY="0.0241756439" localPositionZ="-4.38443375" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.2389254+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.677162" localPositionY="0.0822674" localPositionZ="-5.54297924" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.52414417" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.677162" localPositionY="0.0822674" localPositionZ="-5.54297924" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.68681717" localPositionY="0.05211401" localPositionZ="-4.384432" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.4004896+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.18918467" localPositionY="0.0435379744" localPositionZ="-5.54156876" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.26148081" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.18918467" localPositionY="0.0435379744" localPositionZ="-5.54156876" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.68681669" localPositionY="0.0452569723" localPositionZ="-4.384434" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.6533283+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.36632419" localPositionY="0.02660799" localPositionZ="-5.540795" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.19995844" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.36632419" localPositionY="0.02660799" localPositionZ="-5.540795" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.686826" localPositionY="0.055704236" localPositionZ="-4.38443041" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.814417+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.92233157" localPositionY="0.0527704954" localPositionZ="-5.54070854" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.38616681" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.92233157" localPositionY="0.0527704954" localPositionZ="-5.54070854" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.68683171" localPositionY="0.0578225851" localPositionZ="-4.3844223" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:06.8996965+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.69515276" localPositionY="0.0414199829" localPositionZ="-5.540675" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.523276" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.69515276" localPositionY="0.0414199829" localPositionZ="-5.540675" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.68683434" localPositionY="0.05068159" localPositionZ="-4.384415" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:07.1266072+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.37740231" localPositionY="0.05327475" localPositionZ="-5.54061842" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.74683475" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.37740231" localPositionY="0.05327475" localPositionZ="-5.54061842" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.686837" localPositionY="0.04333234" localPositionZ="-4.38441229" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:07.4407653+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.555534" localPositionY="0.293388367" localPositionZ="-5.32410049" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.61591506" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.555534" localPositionY="0.293388367" localPositionZ="-5.32410049" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.7184782" localPositionY="0.0540124178" localPositionZ="-4.2021637" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:07.6571893+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.526114" localPositionY="0.0857800245" localPositionZ="-5.43571138" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.71562576" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.526114" localPositionY="0.0857800245" localPositionZ="-5.43571138" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.71847844" localPositionY="0.0455069542" localPositionZ="-4.202164" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:07.7100572+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.52346444" localPositionY="0.0505105257" localPositionZ="-5.445781" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.72471511" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.52346444" localPositionY="0.0505105257" localPositionZ="-5.445781" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.71847916" localPositionY="0.04332757" localPositionZ="-4.20216465" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.0337019+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.10841513" localPositionY="0.09111524" localPositionZ="-5.55661345" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.50737011" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.10841513" localPositionY="0.09111524" localPositionZ="-5.55661345" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74931335" localPositionY="0.0585142374" localPositionZ="-4.192277" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.1015467+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.19409418" localPositionY="0.07779598" localPositionZ="-5.580368" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.49501431" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.19409418" localPositionY="0.07779598" localPositionZ="-5.580368" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74931455" localPositionY="0.05481088" localPositionZ="-4.19227648" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.3003828+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.729487" localPositionY="0.0600628853" localPositionZ="-5.65194035" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.45980239" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.729487" localPositionY="0.0600628853" localPositionZ="-5.65194035" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74931765" localPositionY="0.0416488647" localPositionZ="-4.19227266" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.5328355+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.53945732" localPositionY="0.07753074" localPositionZ="-5.65148067" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.65939844" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.53945732" localPositionY="0.07753074" localPositionZ="-5.65148067" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74931765" localPositionY="0.05472386" localPositionZ="-4.19227457" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.6056476+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.76994467" localPositionY="0.0434515476" localPositionZ="-5.65141439" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.78066242" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.76994467" localPositionY="0.0434515476" localPositionZ="-5.65141439" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74931836" localPositionY="0.056868434" localPositionZ="-4.19227743" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:08.8669416+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.234522" localPositionY="0.0263580084" localPositionZ="-5.46630764" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.95677447" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.234522" localPositionY="0.0263580084" localPositionZ="-5.46630764" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74932" localPositionY="0.04660356" localPositionZ="-4.19228172" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:09.1122867+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.405443" localPositionY="0.03910148" localPositionZ="-4.68253565" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.72715855" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.405443" localPositionY="0.03910148" localPositionZ="-4.68253565" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74932551" localPositionY="0.0518958569" localPositionZ="-4.19228" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:09.1501852+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.42634964" localPositionY="0.0378793478" localPositionZ="-4.59367" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.72439063" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.42634964" localPositionY="0.0378793478" localPositionZ="-4.59367" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74932575" localPositionY="0.0551255941" localPositionZ="-4.19228" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:09.3811069+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.512637" localPositionY="0.0515663624" localPositionZ="-4.22681665" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.76364374" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.512637" localPositionY="0.0515663624" localPositionZ="-4.22681665" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.74933171" localPositionY="0.05196464" localPositionZ="-4.192275" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:09.6563484+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.21218729" localPositionY="0.175518751" localPositionZ="-4.23795843" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.70343626" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.21218729" localPositionY="0.175518751" localPositionZ="-4.23795843" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.52061176" localPositionY="0.044911623" localPositionZ="-4.03729153" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:09.9592279+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.237582" localPositionY="0.03907776" localPositionZ="-4.441665" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.7639457" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.237582" localPositionY="0.03907776" localPositionZ="-4.441665" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.52061248" localPositionY="0.0540522337" localPositionZ="-4.03728962" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:10.2464471+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.718317" localPositionY="0.07882452" localPositionZ="-4.43746376" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.262788" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.718317" localPositionY="0.07882452" localPositionZ="-4.43746376" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.52061319" localPositionY="0.0442359447" localPositionZ="-4.03728962" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:10.3990231+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.4343853" localPositionY="0.09583902" localPositionZ="-4.50618839" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.08099949" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.4343853" localPositionY="0.09583902" localPositionZ="-4.50618839" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.46490216" localPositionY="0.0547561646" localPositionZ="-4.028002" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:10.5206962+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.21922541" localPositionY="0.04686582" localPositionZ="-4.57703543" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.932976" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.21922541" localPositionY="0.04686582" localPositionZ="-4.57703543" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.46490383" localPositionY="0.0593919754" localPositionZ="-4.027997" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:10.7590671+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.099536" localPositionY="0.091190815" localPositionZ="-4.72932148" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.24116492" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.099536" localPositionY="0.091190815" localPositionZ="-4.72932148" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.15312839" localPositionY="0.04297316" localPositionZ="-3.926325" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:10.8368532+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.070347" localPositionY="0.07820487" localPositionZ="-4.73991537" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.22605836" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.070347" localPositionY="0.07820487" localPositionZ="-4.73991537" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.15312862" localPositionY="0.04216385" localPositionZ="-3.92632461" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:11.033329+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.06018257" localPositionY="0.0417547226" localPositionZ="-4.74363136" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.220958" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.06018257" localPositionY="0.0417547226" localPositionZ="-4.74363136" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.15312839" localPositionY="0.0552552938" localPositionZ="-3.92632413" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:11.3011887+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.52439356" localPositionY="0.146042943" localPositionZ="-4.74359655" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.897645533" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.52439356" localPositionY="0.146042943" localPositionZ="-4.74359655" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.15313077" localPositionY="0.04951346" localPositionZ="-3.9263258" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:11.4118929+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.26624155" localPositionY="0.060693264" localPositionZ="-4.743588" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.8250518" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.26624155" localPositionY="0.060693264" localPositionZ="-4.743588" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.1531322" localPositionY="0.0451715" localPositionZ="-3.92632627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:11.5555086+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.21314764" localPositionY="0.0443352461" localPositionZ="-4.76463" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.9143659" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.21314764" localPositionY="0.0443352461" localPositionZ="-4.76463" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.04686046" localPositionY="0.0522745848" localPositionZ="-3.86551166" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:11.7829016+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.32628512" localPositionY="0.145413518" localPositionZ="-5.03701353" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.35164893" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.32628512" localPositionY="0.145413518" localPositionZ="-5.03701353" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93721128" localPositionY="0.0604319572" localPositionZ="-3.742573" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:12.0252563+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.05944037" localPositionY="0.110797763" localPositionZ="-5.23769" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.537052" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.05944037" localPositionY="0.110797763" localPositionZ="-5.23769" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85357738" localPositionY="0.0425385237" localPositionZ="-3.71448636" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:12.260628+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.01960325" localPositionY="0.0389997959" localPositionZ="-5.26225948" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.5566535" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.01960325" localPositionY="0.0389997959" localPositionZ="-5.26225948" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85357714" localPositionY="0.05177486" localPositionZ="-3.71448517" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:12.2910567+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.019596" localPositionY="0.0390102863" localPositionZ="-5.262264" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.556655" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.019596" localPositionY="0.0390102863" localPositionZ="-5.262264" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85357761" localPositionY="0.054985404" localPositionZ="-3.714487" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:12.6945326+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.07859874" localPositionY="0.0778484344" localPositionZ="-5.262211" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.73090136" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.07859874" localPositionY="0.0778484344" localPositionZ="-5.262211" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85357547" localPositionY="0.0439676046" localPositionZ="-3.714493" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.1795538+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.637909532" localPositionY="0.0384358168" localPositionZ="-3.79875183" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.21730042" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.637909532" localPositionY="0.0384358168" localPositionZ="-3.79875183" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85360765" localPositionY="0.0437721" localPositionZ="-3.71447515" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.2004649+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.637909532" localPositionY="0.0384358168" localPositionZ="-3.79875183" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.21730042" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.637909532" localPositionY="0.0384358168" localPositionZ="-3.79875183" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.85360765" localPositionY="0.0437721" localPositionZ="-3.71447515" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.3570474+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.06438434" localPositionY="0.0958659649" localPositionZ="-3.79874229" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.79120994" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.06438434" localPositionY="0.0958659649" localPositionZ="-3.79874229" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.853611" localPositionY="0.05232811" localPositionZ="-3.71447349" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.5530927+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.48878634" localPositionY="0.09243393" localPositionZ="-3.759018" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.53052783" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.48878634" localPositionY="0.09243393" localPositionZ="-3.759018" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.01931381" localPositionY="0.0595242977" localPositionZ="-3.7579608" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.6469708+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.52832484" localPositionY="0.07871413" localPositionZ="-3.75330424" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.49229908" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.52832484" localPositionY="0.07871413" localPositionZ="-3.75330424" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.02061582" localPositionY="0.05217433" localPositionZ="-3.75823021" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.7368037+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.54728365" localPositionY="0.0613411665" localPositionZ="-3.75055838" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.47334766" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.54728365" localPositionY="0.0613411665" localPositionZ="-3.75055838" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.020612" localPositionY="0.04456806" localPositionZ="-3.758106" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:15.9063856+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.8206985" localPositionY="0.160008192" localPositionZ="-3.85705829" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.24660194" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="1.8206985" localPositionY="0.160008192" localPositionZ="-3.85705829" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.05674624" localPositionY="0.0462050438" localPositionZ="-3.69518661" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:16.0838761+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.12463236" localPositionY="0.394125223" localPositionZ="-4.150151" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="1.054752" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.12463236" localPositionY="0.394125223" localPositionZ="-4.150151" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.05734825" localPositionY="0.0566544533" localPositionZ="-3.6576643" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:16.0848818+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.16290522" localPositionY="0.3893882" localPositionZ="-4.17585135" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="1.03370452" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.16290522" localPositionY="0.3893882" localPositionZ="-4.17585135" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.05734777" localPositionY="0.05695045" localPositionZ="-3.65766454" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:16.6535885+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.5680716" localPositionY="0.0362921953" localPositionZ="-4.55796146" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.13634264" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.5680716" localPositionY="0.0362921953" localPositionZ="-4.55796146" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.10165" localPositionY="0.156895161" localPositionZ="-3.52175426" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.1889203+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.45492363" localPositionY="0.23280406" localPositionZ="-3.25623322" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.36580372" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.45492363" localPositionY="0.23280406" localPositionZ="-3.25623322" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.10369754" localPositionY="0.0494669676" localPositionZ="-3.51845956" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.2008868+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.45492363" localPositionY="0.23280406" localPositionZ="-3.25623322" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.36580372" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.45492363" localPositionY="0.23280406" localPositionZ="-3.25623322" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.10369754" localPositionY="0.0494669676" localPositionZ="-3.51845956" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.3684529+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.949002" localPositionY="0.264656782" localPositionZ="-2.57489657" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.07254386" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.949002" localPositionY="0.264656782" localPositionZ="-2.57489657" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.103701" localPositionY="0.0429683924" localPositionZ="-3.51845551" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.5858593+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.037231" localPositionY="0.0903857946" localPositionZ="-2.567945" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.33227253" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.037231" localPositionY="0.0903857946" localPositionZ="-2.567945" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.103702" localPositionY="0.0570025444" localPositionZ="-3.51845741" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.633731+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.91390038" localPositionY="0.08122897" localPositionZ="-2.57195735" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.24590755" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.91390038" localPositionY="0.08122897" localPositionZ="-2.57195735" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.103702" localPositionY="0.05637753" localPositionZ="-3.51845837" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:18.8212282+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.733511" localPositionY="0.05341792" localPositionZ="-2.83663154" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.16135287" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.733511" localPositionY="0.05341792" localPositionZ="-2.83663154" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.10361767" localPositionY="0.0494796038" localPositionZ="-3.81232357" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.0182281+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.219494" localPositionY="0.17169416" localPositionZ="-2.83713245" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.9985928" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.219494" localPositionY="0.17169416" localPositionZ="-2.83713245" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.094481" localPositionY="0.0449849367" localPositionZ="-3.82786918" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.0780669+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.12397027" localPositionY="0.144600511" localPositionZ="-2.82486749" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.0034349" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.12397027" localPositionY="0.144600511" localPositionZ="-2.82486749" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.09448171" localPositionY="0.0484952927" localPositionZ="-3.827869" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.2486516+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.786602" localPositionY="0.0430387259" localPositionZ="-2.8814075" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.00047469" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.786602" localPositionY="0.0430387259" localPositionZ="-2.8814075" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.09452844" localPositionY="0.05975318" localPositionZ="-3.83331656" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.4856694+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.62388182" localPositionY="0.06095469" localPositionZ="-3.55936265" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.67796737" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.62388182" localPositionY="0.06095469" localPositionZ="-3.55936265" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.15952921" localPositionY="0.04486537" localPositionZ="-3.97496057" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.6607046+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.38729262" localPositionY="0.0384191275" localPositionZ="-3.962733" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.806364536" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.38729262" localPositionY="0.0384191275" localPositionZ="-3.962733" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.1929245" localPositionY="0.0442585945" localPositionZ="-3.99709868" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:19.691665+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.35927677" localPositionY="0.0390352" localPositionZ="-4.01436758" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.8338268" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.35927677" localPositionY="0.0390352" localPositionZ="-4.01436758" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.19292474" localPositionY="0.0461144447" localPositionZ="-3.99709868" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:20.5174121+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.08855271" localPositionY="0.04695213" localPositionZ="-6.12048769" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.42432833" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.08855271" localPositionY="0.04695213" localPositionZ="-6.12048769" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.20941162" localPositionY="0.0599088669" localPositionZ="-3.97082639" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:22.8864572+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.6826663" localPositionY="0.05373168" localPositionZ="-5.39509773" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.50083482" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.6826663" localPositionY="0.05373168" localPositionZ="-5.39509773" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.20944047" localPositionY="0.0550707579" localPositionZ="-3.97082162" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:22.8993953+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.6826663" localPositionY="0.05373168" localPositionZ="-5.39509773" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.50083482" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.6826663" localPositionY="0.05373168" localPositionZ="-5.39509773" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.20944047" localPositionY="0.0550707579" localPositionZ="-3.97082162" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.0539825+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.68266726" localPositionY="0.08192766" localPositionZ="-5.3951025" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.500837" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.68266726" localPositionY="0.08192766" localPositionZ="-5.3951025" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.20944524" localPositionY="0.0577168465" localPositionZ="-3.97082281" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.3073072+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.70897627" localPositionY="0.08312309" localPositionZ="-4.478874" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.7264166" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.70897627" localPositionY="0.08312309" localPositionZ="-4.478874" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.19427657" localPositionY="0.0418787" localPositionZ="-3.96626782" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.3352453+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.71135378" localPositionY="0.07809901" localPositionZ="-4.41894627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.6872314" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.71135378" localPositionY="0.07809901" localPositionZ="-4.41894627" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.19427657" localPositionY="0.04217732" localPositionZ="-3.96626735" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.5965351+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.011433" localPositionY="0.08333409" localPositionZ="-4.25855541" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.08217013" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.011433" localPositionY="0.08333409" localPositionZ="-4.25855541" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="3.05772972" localPositionY="0.08600545" localPositionZ="-3.74714375" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.7799161+02:00" move="EM_Basic_Kick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.391027" localPositionY="0.468614221" localPositionZ="-4.14857244" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="1.48339689" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.391027" localPositionY="0.468614221" localPositionZ="-4.14857244" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.96917462" localPositionY="0.05173993" localPositionZ="-3.72572231" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:23.8188103+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.46475744" localPositionY="0.473642349" localPositionZ="-4.1182" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="1.54622328" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.46475744" localPositionY="0.473642349" localPositionZ="-4.1182" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.96917462" localPositionY="0.04865706" localPositionZ="-3.72572255" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:24.0452048+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.69987154" localPositionY="0.181324363" localPositionZ="-4.02135324" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.75576341" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.69987154" localPositionY="0.181324363" localPositionZ="-4.02135324" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.96917629" localPositionY="0.04718113" localPositionZ="-3.72572017" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:24.2426778+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.06670046" localPositionY="0.0322264433" localPositionZ="-4.006581" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.16144" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.06670046" localPositionY="0.0322264433" localPositionZ="-4.006581" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.94107413" localPositionY="0.0596433878" localPositionZ="-3.72038484" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:24.3523835+02:00" move="EM_Basic_SuperKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.93934083" localPositionY="0.0364125967" localPositionZ="-4.037723" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="1.07636106" oneSeesTwo="true" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.93934083" localPositionY="0.0364125967" localPositionZ="-4.037723" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.91248631" localPositionY="0.0544290543" localPositionZ="-3.715042" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:28.8357345+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.546249866" localPositionY="-0.09424794" localPositionZ="-4.417542" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.61390543" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.546249866" localPositionY="-0.09424794" localPositionZ="-4.417542" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9369123" localPositionY="0.05739534" localPositionZ="-3.45427" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:28.8586481+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.546249866" localPositionY="-0.09424794" localPositionZ="-4.417542" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.61390543" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.546249866" localPositionY="-0.09424794" localPositionZ="-4.417542" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9369123" localPositionY="0.05739534" localPositionZ="-3.45427" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.0262002+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.885557353" localPositionY="0.0984379053" localPositionZ="-3.61221313" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.82573175" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.885557353" localPositionY="0.0984379053" localPositionZ="-3.61221313" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93691278" localPositionY="0.0526766777" localPositionZ="-3.454275" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.2097112+02:00" move="EM_MoveChain_RegularMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.11057079" localPositionY="0.09178758" localPositionZ="-2.83551884" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.09450674" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.11057079" localPositionY="0.09178758" localPositionZ="-2.83551884" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.936913" localPositionY="0.04441285" localPositionZ="-3.45427656" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.2964774+02:00" move="EM_Basic_Punch" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.19074285" localPositionY="0.0779767" localPositionZ="-2.55879045" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.22367668" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.19074285" localPositionY="0.0779767" localPositionZ="-2.55879045" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93691373" localPositionY="0.04451704" localPositionZ="-3.45427656" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.4141642+02:00" move="EM_MoveChain_SpecialMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.29765224" localPositionY="0.0450894833" localPositionZ="-2.19079041" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.4190464" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.29765224" localPositionY="0.0450894833" localPositionZ="-2.19079041" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93691778" localPositionY="0.0550470352" localPositionZ="-3.454273" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.5832252+02:00" move="EM_MoveChain_SpecialMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.15206754" localPositionY="0.09727943" localPositionZ="-2.10126758" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.307024" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.15206754" localPositionY="0.09727943" localPositionZ="-2.10126758" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93692374" localPositionY="0.0578434467" localPositionZ="-3.454267" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.7398074+02:00" move="EM_Basic_RoundKick" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.15205967" localPositionY="0.0763497353" localPositionZ="-2.072063" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.31628227" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.15205967" localPositionY="0.0763497353" localPositionZ="-2.072063" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9369278" localPositionY="0.0477694273" localPositionZ="-3.454262" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:29.7697294+02:00" move="EM_MoveChain_SpecialMove" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.152062" localPositionY="0.0919400454" localPositionZ="-2.064213" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.31880569" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.152062" localPositionY="0.0919400454" localPositionZ="-2.064213" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9369297" localPositionY="0.04515052" localPositionZ="-3.45425987" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:30.3158002+02:00" move="EM_Basic_Smite" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.761671543" localPositionY="0.192452908" localPositionZ="-0.995767355" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="4.44115353" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.761671543" localPositionY="0.192452908" localPositionZ="-0.995767355" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9369297" localPositionY="0.05122614" localPositionZ="-3.4542613" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:31.0578163+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.7579994" localPositionY="0.05556965" localPositionZ="0.7178677" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="5.57307529" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.7579994" localPositionY="0.05556965" localPositionZ="0.7178677" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93694472" localPositionY="0.0439533" localPositionZ="-3.45424843" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:31.2782102+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.758002937" localPositionY="-0.07763708" localPositionZ="3.40568686" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="7.79174662" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.758002937" localPositionY="-0.07763708" localPositionZ="3.40568686" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.936946" localPositionY="0.050744772" localPositionZ="-3.454245" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:31.7595552+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.26225781" localPositionY="0.460878134" localPositionZ="5.949939" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="10.2991323" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-1.26225781" localPositionY="0.460878134" localPositionZ="5.949939" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93694639" localPositionY="0.0433392525" localPositionZ="-3.454252" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:31.9789684+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-4.049743" localPositionY="0.006014228" localPositionZ="5.94995" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="11.7154942" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-4.049743" localPositionY="0.006014228" localPositionZ="5.94995" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.936952" localPositionY="0.057659626" localPositionZ="-3.45424557" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:32.1943923+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.763942" localPositionY="-0.349775136" localPositionZ="6.11701" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="13.6277781" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.763942" localPositionY="-0.349775136" localPositionZ="6.11701" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93696284" localPositionY="0.05052066" localPositionZ="-3.45423746" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:32.4068273+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.815008" localPositionY="-0.331537843" localPositionZ="6.012944" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="13.591485" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.815008" localPositionY="-0.331537843" localPositionZ="6.012944" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93696427" localPositionY="0.0423932076" localPositionZ="-3.45423555" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:32.6192763+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.777545" localPositionY="-0.3356141" localPositionZ="6.013014" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="13.5646811" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.777545" localPositionY="-0.3356141" localPositionZ="6.013014" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93696642" localPositionY="0.0564188957" localPositionZ="-3.454237" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:33.7143489+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-7.003474" localPositionY="-0.02131629" localPositionZ="8.173017" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="15.2972355" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-7.003474" localPositionY="-0.02131629" localPositionZ="8.173017" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93698382" localPositionY="0.04518366" localPositionZ="-3.45422268" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:34.4157566+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-7.916877" localPositionY="-0.038122" localPositionZ="9.072197" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="16.5746078" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-7.916877" localPositionY="-0.038122" localPositionZ="9.072197" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.936984" localPositionY="0.05308962" localPositionZ="-3.45422721" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:34.6398332+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-5.24452972" localPositionY="0.147332311" localPositionZ="9.072218" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="14.9615831" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-5.24452972" localPositionY="0.147332311" localPositionZ="9.072218" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93699265" localPositionY="0.0543077" localPositionZ="-3.45422053" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:34.8732148+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.08948088" localPositionY="-0.09217906" localPositionZ="9.072205" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="13.4972868" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.08948088" localPositionY="-0.09217906" localPositionZ="9.072205" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93699837" localPositionY="0.042135" localPositionZ="-3.45421815" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:35.096646+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.581822157" localPositionY="-0.213413239" localPositionZ="9.087506" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.7609482" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.581822157" localPositionY="-0.213413239" localPositionZ="9.087506" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93699932" localPositionY="0.05723667" localPositionZ="-3.45422149" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:35.3270012+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.811360836" localPositionY="0.0742602348" localPositionZ="8.735609" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.3737793" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.811360836" localPositionY="0.0742602348" localPositionZ="8.735609" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93699932" localPositionY="0.05094385" localPositionZ="-3.45422578" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:35.8989345+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.018543" localPositionY="0.0422413349" localPositionZ="8.639124" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.14161" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="4.018543" localPositionY="0.0422413349" localPositionZ="8.639124" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93700862" localPositionY="0.0542407036" localPositionZ="-3.45422077" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:36.1133647+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="6.706348" localPositionY="-0.08906269" localPositionZ="8.639143" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.6671734" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="6.706348" localPositionY="-0.08906269" localPositionZ="8.639143" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93701077" localPositionY="0.0421203375" localPositionZ="-3.454218" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:36.3444284+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="7.36406755" localPositionY="0.471772432" localPositionZ="8.639147" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="12.878212" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="7.36406755" localPositionY="0.471772432" localPositionZ="8.639147" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93700981" localPositionY="0.0559927225" localPositionZ="-3.45421863" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:36.5558446+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="10.0891676" localPositionY="0.446722746" localPositionZ="8.639157" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="14.0500259" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="10.0891676" localPositionY="0.446722746" localPositionZ="8.639157" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93701029" localPositionY="0.0516245365" localPositionZ="-3.454224" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:36.7812407+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="13.0170927" localPositionY="0.04548216" localPositionZ="8.639149" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="15.7434969" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="13.0170927" localPositionY="0.04548216" localPositionZ="8.639149" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93701124" localPositionY="0.0440200567" localPositionZ="-3.454224" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:37.1023836+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="13.8955183" localPositionY="0.180173755" localPositionZ="8.639144" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="16.3198681" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="13.8955183" localPositionY="0.180173755" localPositionZ="8.639144" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93701887" localPositionY="0.05751133" localPositionZ="-3.45421576" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:37.3118224+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="11.1462278" localPositionY="0.8291054" localPositionZ="8.639141" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="14.616437" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="11.1462278" localPositionY="0.8291054" localPositionZ="8.639141" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.937022" localPositionY="0.04249227" localPositionZ="-3.45421124" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:37.5437122+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="8.218302" localPositionY="0.678287864" localPositionZ="8.639138" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="13.196249" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="8.218302" localPositionY="0.678287864" localPositionZ="8.639138" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.937021" localPositionY="0.0506147146" localPositionZ="-3.45420957" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:37.7561566+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.37269" localPositionY="0.2035346" localPositionZ="8.639134" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.3361864" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.37269" localPositionY="0.2035346" localPositionZ="8.639134" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9370203" localPositionY="0.05347109" localPositionZ="-3.454211" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:37.9774163+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.44475245" localPositionY="-0.518396556" localPositionZ="8.639139" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.1033669" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.44475245" localPositionY="-0.518396556" localPositionZ="8.639139" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93702149" localPositionY="0.0440598726" localPositionZ="-3.45421338" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:38.1948863+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.701963" localPositionY="1.6623745" localPositionZ="8.951567" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="12.4080029" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="2.701963" localPositionY="1.6623745" localPositionZ="8.951567" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93702435" localPositionY="0.0556503534" localPositionZ="-3.454209" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:38.4621711+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.335157454" localPositionY="2.470361" localPositionZ="8.951744" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="12.8302269" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-0.335157454" localPositionY="2.470361" localPositionZ="8.951744" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93703032" localPositionY="0.0500825644" localPositionZ="-3.454203" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:38.8072509+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.77513027" localPositionY="1.86290169" localPositionZ="8.951742" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="14.1053362" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-3.77513027" localPositionY="1.86290169" localPositionZ="8.951742" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93703246" localPositionY="0.0527786" localPositionZ="-3.45419836" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:39.0446303+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.74855" localPositionY="1.03476143" localPositionZ="8.95176" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="15.7390747" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.74855" localPositionY="1.03476143" localPositionZ="8.95176" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.937032" localPositionY="0.0527874231" localPositionZ="-3.45420432" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:39.2785566+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-9.833306" localPositionY="-0.0265618563" localPositionZ="8.951756" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="17.8041973" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-9.833306" localPositionY="-0.0265618563" localPositionZ="8.951756" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93703365" localPositionY="0.0427464247" localPositionZ="-3.4542048" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:39.6320805+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-12.3528471" localPositionY="0.0553799868" localPositionZ="8.968358" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="19.7002678" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-12.3528471" localPositionY="0.0553799868" localPositionZ="8.968358" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93704367" localPositionY="0.0549795628" localPositionZ="-3.45419526" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:39.851728+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-9.651141" localPositionY="-0.07976651" localPositionZ="8.968365" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="17.6856556" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-9.651141" localPositionY="-0.07976651" localPositionZ="8.968365" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93704581" localPositionY="0.04160154" localPositionZ="-3.45419431" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:40.0741293+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.918908" localPositionY="-0.204207063" localPositionZ="8.968365" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="15.8574848" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.918908" localPositionY="-0.204207063" localPositionZ="8.968365" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93704629" localPositionY="0.0549761057" localPositionZ="-3.454195" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:40.2915458+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.679865" localPositionY="-0.274866462" localPositionZ="8.995716" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="15.7316675" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.679865" localPositionY="-0.274866462" localPositionZ="8.995716" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93704653" localPositionY="0.05204916" localPositionZ="-3.45419836" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:40.5019849+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.679877" localPositionY="-0.227878451" localPositionZ="9.229281" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="15.9171581" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-6.679877" localPositionY="-0.227878451" localPositionZ="9.229281" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.937047" localPositionY="0.0437893867" localPositionZ="-3.4542" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:40.711949+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-5.32381058" localPositionY="0.59661293" localPositionZ="9.227965" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="15.1353579" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-5.32381058" localPositionY="0.59661293" localPositionZ="9.227965" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93705034" localPositionY="0.057110548" localPositionZ="-3.454197" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:40.9444166+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.51487637" localPositionY="0.7148689" localPositionZ="9.227969" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="13.8043728" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="-2.51487637" localPositionY="0.7148689" localPositionZ="9.227969" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93705821" localPositionY="0.0513774157" localPositionZ="-3.45418882" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:41.1827731+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.570812345" localPositionY="0.343028069" localPositionZ="9.227978" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="12.9010248" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="0.570812345" localPositionY="0.343028069" localPositionZ="9.227978" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93705916" localPositionY="0.0433434248" localPositionZ="-3.454187" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:41.399211+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.4154315" localPositionY="-0.2875725" localPositionZ="9.227988" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.6911945" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.4154315" localPositionY="-0.2875725" localPositionZ="9.227988" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93705821" localPositionY="0.05788362" localPositionZ="-3.45418763" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:41.6275848+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.51508641" localPositionY="-0.191578746" localPositionZ="9.227886" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.6952429" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="3.51508641" localPositionY="-0.191578746" localPositionZ="9.227886" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.9370594" localPositionY="0.0483286381" localPositionZ="-3.45419073" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:42.188102+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.64527559" localPositionY="-0.03153169" localPositionZ="9.187607" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="12.9286156" oneSeesTwo="true" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_09_01" localPositionX="5.64527559" localPositionY="-0.03153169" localPositionZ="9.187607" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_09_01" localPositionX="2.93707013" localPositionY="0.0516176224" localPositionZ="-3.45417786" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <hurtIncident time="2020-04-08T12:18:51.8353528+02:00" damageAmount="5">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.72799635" localPositionY="-0.0252836943" localPositionZ="-5.943535" normalizedHP="0.99" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.41805243" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.72799635" localPositionY="-0.0252836943" localPositionZ="-5.943535" normalizedHP="0.99" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="3.69790149" localPositionY="0.1876415" localPositionZ="-9.202674" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </hurtIncident>
+        <spawnIncident time="2020-04-08T12:18:52.6679595+02:00">
+          <entity name="P_Entity_Character_DebugDude_Enemy_Puncher(Clone)" id="-444576" localPositionX="12.6095285" localPositionY="0.5" localPositionZ="29.8172646" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="2.97180176" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.727746" localPositionY="0.283379316" localPositionZ="-5.97674" normalizedHP="0.99" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="3.702225" localPositionY="0.04899919" localPositionZ="-8.765989" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </spawnIncident>
+        <spawnIncident time="2020-04-08T12:18:52.6789252+02:00">
+          <entity name="P_Entity_Character_DebugDude_Enemy_Kicker(Clone)" id="-445516" localPositionX="-13.4284515" localPositionY="0.5" localPositionZ="29.7353573" normalizedHP="1" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="2.97180176" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.727746" localPositionY="0.283379316" localPositionZ="-5.97674" normalizedHP="0.99" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="3.702225" localPositionY="0.04899919" localPositionZ="-8.765989" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </spawnIncident>
+        <hurtIncident time="2020-04-08T12:18:52.7806537+02:00" damageAmount="5">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.72774458" localPositionY="0.280609369" localPositionZ="-5.97674" normalizedHP="0.98" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.19791937" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.72774458" localPositionY="0.280609369" localPositionZ="-5.97674" normalizedHP="0.98" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="3.70222259" localPositionY="0.03510034" localPositionZ="-9.005765" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </hurtIncident>
+        <hurtIncident time="2020-04-08T12:18:53.302772+02:00" damageAmount="5">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.93262768" localPositionY="0.274296522" localPositionZ="-5.8740654" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="3.489192" oneSeesTwo="false" twoSeesOne="false">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="4.93262768" localPositionY="0.274296522" localPositionZ="-5.8740654" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="5.771823" localPositionY="0.0727368" localPositionZ="-9.260836" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </hurtIncident>
+        <moveIncident time="2020-04-08T12:18:56.2097769+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="8.339253" localPositionY="-0.0150365829" localPositionZ="-6.35358238" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="0.943770766" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="8.339253" localPositionY="-0.0150365829" localPositionZ="-6.35358238" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="7.4814105" localPositionY="0.0440809727" localPositionZ="-6.74704" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:56.4540899+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.558944" localPositionY="-0.2549641" localPositionZ="-5.285616" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          <players distance="2.54006362" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.558944" localPositionY="-0.2549641" localPositionZ="-5.285616" normalizedHP="0.97" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="7.48140526" localPositionY="0.0594434738" localPositionZ="-6.747039" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:56.6870111+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.365992" localPositionY="-0.156107783" localPositionZ="-2.43923" normalizedHP="0.97" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="4.70201159" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.365992" localPositionY="-0.156107783" localPositionZ="-2.43923" normalizedHP="0.97" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="7.4814" localPositionY="0.0467609167" localPositionZ="-6.74704" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <moveIncident time="2020-04-08T12:18:56.8994288+02:00" move="EM_Basic_Dash" chainLength="0">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.155867" localPositionY="-0.6325875" localPositionZ="-1.99681854" normalizedHP="0.97" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="5.03670263" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="9.155867" localPositionY="-0.6325875" localPositionZ="-1.99681854" normalizedHP="0.97" isAlive="true" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="7.481398" localPositionY="0.04615569" localPositionZ="-6.747032" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </moveIncident>
+        <deathIncident time="2020-04-08T12:18:57.1582408+02:00">
+          <entity name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="7.986182" localPositionY="-1.14348567" localPositionZ="-1.6061039" normalizedHP="0" isAlive="false" isAirborne="true" isStunned="false" isDizzy="false" />
+          <players distance="5.165645" oneSeesTwo="false" twoSeesOne="true">
+            <playerOne name="P_Entity_Character_DebugDude_Player_1(Clone)" id="-442164" currentRoom="RoomConfig_04_01" localPositionX="7.986182" localPositionY="-1.14348567" localPositionZ="-1.6061039" normalizedHP="0" isAlive="false" isAirborne="true" isStunned="false" isDizzy="false" />
+            <playerTwo name="P_Entity_Character_DebugDude_Player_2(Clone)" id="-443184" currentRoom="RoomConfig_04_01" localPositionX="7.48139954" localPositionY="0.05371225" localPositionZ="-6.74702644" normalizedHP="1" isAlive="true" isAirborne="false" isStunned="false" isDizzy="false" />
+          </players>
+        </deathIncident>
+      </incidents>
+    </session>
+  </sessions>
+</database>

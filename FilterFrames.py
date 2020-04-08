@@ -1,6 +1,7 @@
 import tkinter as tk
 import Filters as F
 import View
+import datetime
 
 class EmptyFilterFrame(tk.Frame):
     def __init__(self, master, controller, cnf={}, **kw):
@@ -72,6 +73,34 @@ class EmptyFilterFrame(tk.Frame):
                 update= lambda: self.updatedFilterSettings()
             )
             self.onFilterUpdate.append(lambda : self.filter.assignBool(self.settingFrame.checkedBool()))
+        elif isinstance(self.filter, F.DateFilter):
+            self.settingFrame=DateFilterFrame(
+                self,
+                self.filter.potentialDates(), 
+                update= lambda: self.updatedFilterSettings()
+            )
+            self.onFilterUpdate.append(lambda : self.filter.assignDate(self.settingFrame.selectedDate()))
+        elif isinstance(self.filter, F.DateFilterChild):
+            self.settingFrame=DateFilterFrame(
+                self,
+                self.filter.potentialDates(), 
+                update= lambda: self.updatedFilterSettings()
+            )
+            self.onFilterUpdate.append(lambda : self.filter.assignDate(self.settingFrame.selectedDate()))
+        elif isinstance(self.filter, F.TimeFilter):
+            self.settingFrame=TimeFilterFrame(
+                self,
+                *self.filter.potentialRange(),
+                update= lambda: self.updatedFilterSettings()
+            )
+            self.onFilterUpdate.append(lambda : self.filter.assignRange(*self.settingFrame.timeRange()))
+        elif isinstance(self.filter, F.TimeFilterChild):
+            self.settingFrame=TimeFilterFrame(
+                self,
+                *self.filter.potentialRange(),
+                update= lambda: self.updatedFilterSettings()
+            )
+            self.onFilterUpdate.append(lambda : self.filter.assignRange(*self.settingFrame.timeRange()))
 
         self.settingFrame.grid(sticky="E")
 
@@ -165,3 +194,85 @@ class BoolFilterFrame(tk.Frame):
 
     def checkedBool(self):
         return self.checkTkVar.get()
+
+class DateFilterFrame(tk.Frame):
+    def __init__(self, master, dates=set(), update = [lambda *args : None]):
+        super().__init__(master)
+        self.update = update
+
+        self.label = tk.Label(self, text="select date")
+        self.label.grid()
+
+        self.dateSelect = tk.Listbox(self, selectmode=tk.SINGLE)
+        for date in dates:
+            self.dateSelect.insert(tk.END, date.isoformat())
+        self.dateSelect.bind('<<ListboxSelect>>', self.updatedOptions)
+        self.dateSelect.bind("<Button-1>", self.clickCallback)
+        self.dateSelect.grid()
+
+    def clickCallback(self, evt):
+        self.dateSelect.selection_clear(0, self.dateSelect.size()-1)
+
+    def selectedDate(self):
+        index = self.dateSelect.curselection()[0]
+        return datetime.date.fromisoformat(self.dateSelect.get(index))
+
+    def updatedOptions(self, *args):
+        self.update()
+
+class TimeFilterFrame(tk.Frame):
+    def __init__(self, master, min, max, update = [lambda *args : None]):
+        super().__init__(master)
+        self.update = update
+
+        self.fromHourTkVar = tk.IntVar(self)
+        self.fromHourTkVar.trace("w", self.updatedOptions)
+        self.fromHourTkVar.set(min.hour)
+        self.fromMinuteTkVar = tk.IntVar(self)
+        self.fromMinuteTkVar.trace("w", self.updatedOptions)
+        self.fromMinuteTkVar.set(min.minute)
+        self.fromSecondTkVar = tk.IntVar(self)
+        self.fromSecondTkVar.trace("w", self.updatedOptions)
+        self.fromSecondTkVar.set(min.second)
+        self.fromMicrosecondTkVar = tk.IntVar(self)
+        self.fromMicrosecondTkVar.trace("w", self.updatedOptions)
+        self.fromMicrosecondTkVar.set(min.microsecond)
+
+        self.toHourTkVar = tk.IntVar(self)
+        self.toHourTkVar.trace("w", self.updatedOptions)
+        self.toHourTkVar.set(max.hour)
+        self.toMinuteTkVar = tk.IntVar(self)
+        self.toMinuteTkVar.trace("w", self.updatedOptions)
+        self.toMinuteTkVar.set(max.minute)
+        self.toSecondTkVar = tk.IntVar(self)
+        self.toSecondTkVar.trace("w", self.updatedOptions)
+        self.toSecondTkVar.set(max.second)
+        self.toMicrosecondTkVar = tk.IntVar(self)
+        self.toMicrosecondTkVar.trace("w", self.updatedOptions)
+        self.toMicrosecondTkVar.set(max.microsecond)
+
+        self.fromHourWheel = tk.Scale(self, from_=0, to=23, variable=self.fromHourTkVar, orient=tk.HORIZONTAL, label="H")
+        self.fromMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.fromMinuteTkVar, orient=tk.HORIZONTAL, label="M")
+        self.fromSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.fromSecondTkVar, orient=tk.HORIZONTAL, label="S")
+        self.toHourWheel = tk.Scale(self, from_=0, to=23, variable=self.toHourTkVar, orient=tk.HORIZONTAL, label="H")
+        self.toMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.toMinuteTkVar, orient=tk.HORIZONTAL, label="M")
+        self.toSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.toSecondTkVar, orient=tk.HORIZONTAL, label="S")
+
+        self.fromLabel= tk.Label(self, text="from")
+        self.toLabel=tk.Label(self, text="to")
+        self.fromLabel.grid(row=0, column=0, sticky="W")
+        self.fromHourWheel.grid(row=1, column=0)
+        self.fromMinuteWheel.grid(row=1, column=1)
+        self.fromSecondWheel.grid(row=1, column=2)
+        self.toLabel.grid(row=2, column=0, sticky="W")
+        self.toHourWheel.grid(row=3, column=0)
+        self.toMinuteWheel.grid(row=3, column=1)
+        self.toSecondWheel.grid(row=3, column=2)
+        
+    def timeRange(self):
+        min = datetime.time(self.fromHourTkVar.get(), self.fromMinuteTkVar.get(), self.fromSecondTkVar.get(), self.fromMicrosecondTkVar.get())
+        max = datetime.time(self.toHourTkVar.get(), self.toMinuteTkVar.get(), self.toSecondTkVar.get(), self.toMicrosecondTkVar.get())
+        return (min, max)
+
+    def updatedOptions(self, *args):
+        self.update()

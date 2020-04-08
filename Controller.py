@@ -43,6 +43,14 @@ def possibleFilters(data):
             filters["Range "+tag+"/"+att] = Filters.RangeFilter(att)
         else:
             filters["Range "+tag+"/"+att] = Filters.RangeFilterChild(tag[1:], att)
+    for attributes in uniqueTimeAttributesInData(data):
+        tag, _, att = attributes.rpartition('/')
+        if tag[0] == "0":
+            filters["Date "+tag+"/"+att] = Filters.DateFilter(att)
+            filters["Time "+tag+"/"+att] = Filters.TimeFilter(att)
+        else:
+            filters["Date "+tag+"/"+att] = Filters.DateFilterChild(tag[1:], att)
+            filters["Time "+tag+"/"+att] = Filters.TimeFilterChild(tag[1:], att)
     return filters
 
 

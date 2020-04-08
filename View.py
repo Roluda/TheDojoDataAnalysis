@@ -5,8 +5,7 @@ import DiagramFrames as DF
 import Filters
 import Controller as C
 
-font="Helvetica 12"
-fontBold="Helvetica 12 bold"
+fontBold=("",9,"bold")
 datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident","room"}
 
 class MainWindow(tk.Tk):

@@ -1,5 +1,7 @@
 import Data
 import xml.etree.ElementTree
+import datetime
+import dateutil
 
 class Filter:
     """a filter takes a list of elementTree elements outputs them
@@ -243,3 +245,122 @@ class RangeFilterChild(Filter):
         return elements
 
 
+class TimeFilter(Filter):
+    """removes all elements without "attribute" which value is not 
+    inside a time window
+    """
+    def __init__(self, attribute, min =datetime.time.min, max=datetime.time.max, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.attribute = attribute
+        self.mini = min
+        self.maxi = max
+
+    def assignRange(self, min, max):
+        self.mini = min
+        self.maxi = max
+
+    def potentialRange(self):
+        """returns a min, max tupel that could be used for filtering"""
+        values = []
+        for candidate in self.root.output():
+            values.append(dateutil.parser.parse(candidate.get(self.attribute)).time())
+        return (min(values), max(values))
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = dateutil.parser.parse(element.get(self.attribute)).time()
+            if value >= self.mini and value <= self.maxi:
+                elements.append(element)
+        return elements
+
+class TimeFilterChild(Filter):
+    """removes all elements without a "tag" child with "attribute" which value is not 
+    inside time range
+    """
+    def __init__(self, tag, attribute, min=datetime.time.min, max=datetime.time.max, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.tag = tag
+        self.attribute = attribute
+        self.min = min
+        self.max = max
+
+    def assignRange(self, min, max):
+        self.min = min
+        self.max = max
+
+    def potentialRange(self):
+        """returns a min, max tupel that could be used for filtering"""
+        values = []
+        for element in self.root.output():
+            for candidate in element.iter(self.tag):
+                values.append(dateutil.parser.parse(element.find(".//"+self.tag).get(self.attribute)).time())
+        return (min(values), max(values))
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = dateutil.parser.parse(element.find(".//"+self.tag).get(self.attribute)).time()
+            if value >= self.min and value <= self.max:
+                elements.append(element)
+        return elements
+
+class DateFilter(Filter):
+    """removes all elements without "attribute" which value is not 
+    on set date
+    """
+    def __init__(self, attribute, date =datetime.date.today(), parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.attribute = attribute
+        self.date = date
+
+    def assignDate(self, date):
+        self.date = date
+
+    def potentialDates(self):
+        """returns a date object set that could be used for filtering"""
+        values = set()
+        for candidate in self.root.output():
+            values.add(dateutil.parser.parse(candidate.get(self.attribute)).date())
+        return values
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = dateutil.parser.parse(element.get(self.attribute)).date()
+            if value == self.date:
+                elements.append(element)
+        return elements
+
+class DateFilterChild(Filter):
+    """removes all elements without a "tag" child with "attribute" which value is not 
+    ón set date
+    """
+    def __init__(self, tag, attribute, date=datetime.date.today, parent = None, data = None):
+        super().__init__(parent=parent, data=data)
+        self.tag = tag
+        self.attribute = attribute
+        self.date = date
+
+    def assignDate(self, date):
+        self.date = date
+
+    def potentialDates(self):
+        """returns a min, max tupel that could be used for filtering"""
+        values = set()
+        for element in self.root.output():
+            for candidate in element.iter(self.tag):
+                values.add(dateutil.parser.parse(candidate.get(self.attribute)).date())
+        return values
+
+    def output(self):
+        self.data = self.parent.output() if self.parent is not None else self.data
+        elements =[]
+        for element in self.parent.output():
+            value = dateutil.parser.parse(element.find(".//"+self.tag).get(self.attribute)).date()
+            if value == self.date:
+                elements.append(element)
+        return elements
