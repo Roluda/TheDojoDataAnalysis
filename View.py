@@ -35,7 +35,8 @@ class MainWindow(tk.Tk):
     def importXmlCallback(self):
         for action in self.onDeleteFilters: action()
         for action in self.onDeleteDiagrams: action()
-        self.controller.newData(self.importFrame.currentFilepath)
+        for filepath in self.importFrame.currentFilepaths:
+            self.controller.newData(filepath)
         if(hasattr(self, "dataSelectFrame")): self.dataSelectFrame.destroy()
         self.dataSelectFrame = DataSelectFrame(self.settingsParent, self.selectChangeCallback, relief ="raised", borderwidth =2)
         self.dataSelectFrame.pack(expand=True, anchor="n", fill=tk.X)
@@ -76,14 +77,15 @@ class ImportFrame(tk.Frame):
     def __init__(self, master=None, onImport=lambda *args : None, cnf={}, **kw):
         super().__init__(master=master, cnf=cnf, **kw)
         self.onImort = onImport
-        self.currentFilepath = ""
+        self.currentFilepaths = []
         self.importHead=tk.Label(self, text="select a .xml file")
         self.importHead.pack(fill=tk.X)
         self.importButton = tk.Button(self, text="open explorer..", command= self.importXMLFiles)
         self.importButton.pack(fill=tk.X)
     
     def importXMLFiles(self):
-        self.currentFilepath = filedialog.askopenfilename()
+        self.currentFilepaths = filedialog.askopenfilenames()
+        print(self.currentFilepaths)
         self.onImort()
 
 class DataSelectFrame(tk.Frame):
