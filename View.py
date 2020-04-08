@@ -77,7 +77,7 @@ class ImportFrame(tk.Frame):
         super().__init__(master=master, cnf=cnf, **kw)
         self.onImort = onImport
         self.currentFilepaths = []
-        self.importHead=tk.Label(self, text="select a .xml file")
+        self.importHead=tk.Label(self, text="select .xml file(s)")
         self.importHead.pack(fill=tk.X)
         self.importButton = tk.Button(self, text="open explorer..", command= self.importXMLFiles)
         self.importButton.pack(fill=tk.X)
@@ -94,7 +94,7 @@ class DataSelectFrame(tk.Frame):
         self.dataSelectTkVar = tk.StringVar(self)
         self.dataSelectTkVar.set("Choose..")
         self.dataSelectTkVar.trace('w', self.changedSelectCallback)
-        self.dataSelectHead = tk.Label(self, text="select data")
+        self.dataSelectHead = tk.Label(self, text="select datapoint element")
         self.dataSelectHead.pack(fill=tk.X)
         self.dataSelectMenu = tk.OptionMenu(self, self.dataSelectTkVar, *datapoints)
         self.dataSelectMenu.pack(fill=tk.X)
