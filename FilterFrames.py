@@ -251,12 +251,14 @@ class TimeFilterFrame(tk.Frame):
         self.toMicrosecondTkVar.trace("w", self.updatedOptions)
         self.toMicrosecondTkVar.set(max.microsecond)
 
-        self.fromHourWheel = tk.Scale(self, from_=0, to=23, variable=self.fromHourTkVar, orient=tk.HORIZONTAL, label="H")
-        self.fromMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.fromMinuteTkVar, orient=tk.HORIZONTAL, label="M")
-        self.fromSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.fromSecondTkVar, orient=tk.HORIZONTAL, label="S")
-        self.toHourWheel = tk.Scale(self, from_=0, to=23, variable=self.toHourTkVar, orient=tk.HORIZONTAL, label="H")
-        self.toMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.toMinuteTkVar, orient=tk.HORIZONTAL, label="M")
-        self.toSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.toSecondTkVar, orient=tk.HORIZONTAL, label="S")
+        self.fromHourWheel = tk.Scale(self, from_=0, to=23, variable=self.fromHourTkVar, orient=tk.HORIZONTAL, label="Hour")
+        self.fromMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.fromMinuteTkVar, orient=tk.HORIZONTAL, label="Min")
+        self.fromSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.fromSecondTkVar, orient=tk.HORIZONTAL, label="Sec")
+        self.fromMicrosecondWheel = tk.Scale(self, from_=0, to=999999, variable=self.fromMicrosecondTkVar, orient=tk.HORIZONTAL, label="MicroS")
+        self.toHourWheel = tk.Scale(self, from_=0, to=23, variable=self.toHourTkVar, orient=tk.HORIZONTAL, label="Hour")
+        self.toMinuteWheel = tk.Scale(self, from_=0, to=59, variable=self.toMinuteTkVar, orient=tk.HORIZONTAL, label="Min")
+        self.toSecondWheel = tk.Scale(self, from_=0, to=59, variable=self.toSecondTkVar, orient=tk.HORIZONTAL, label="Sec")
+        self.toMicrosecondWheel = tk.Scale(self, from_=0, to=999999, variable=self.toMicrosecondTkVar, orient=tk.HORIZONTAL, label="MicroS")
 
         self.fromLabel= tk.Label(self, text="from")
         self.toLabel=tk.Label(self, text="to")
@@ -264,10 +266,12 @@ class TimeFilterFrame(tk.Frame):
         self.fromHourWheel.grid(row=1, column=0)
         self.fromMinuteWheel.grid(row=1, column=1)
         self.fromSecondWheel.grid(row=1, column=2)
+        self.fromMicrosecondWheel.grid(row=1, column=3)
         self.toLabel.grid(row=2, column=0, sticky="W")
         self.toHourWheel.grid(row=3, column=0)
         self.toMinuteWheel.grid(row=3, column=1)
         self.toSecondWheel.grid(row=3, column=2)
+        self.toMicrosecondWheel.grid(row=3, column=3)
         
     def timeRange(self):
         min = datetime.time(self.fromHourTkVar.get(), self.fromMinuteTkVar.get(), self.fromSecondTkVar.get(), self.fromMicrosecondTkVar.get())
