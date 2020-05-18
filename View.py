@@ -6,7 +6,7 @@ import Filters
 import Controller as C
 
 fontBold=("",9,"bold")
-datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident","room"}
+datapoints = {"moveIncident", "deathIncident", "spawnIncident", "hurtIncident","room","session"}
 
 class MainWindow(tk.Tk):
     """the main Window"""
@@ -27,8 +27,8 @@ class MainWindow(tk.Tk):
         
         #self.debugButton = tk.Button(self.settingsParent, text="ping filter chain", command= lambda: self.controller.root.pingDown(0))
         #self.debugButton.pack()
-        #self.debugButton2 = tk.Button(self.settingsParent, text="count chain output", command= lambda: print(len(self.controller.treeOutput())))
-        #self.debugButton2.pack()
+        self.debugButton2 = tk.Button(self.settingsParent, text="count chain output", command= lambda: print(len(self.controller.treeOutput())))
+        self.debugButton2.pack()
         self.mainloop()
    
     def importXmlCallback(self):
@@ -52,7 +52,7 @@ class MainWindow(tk.Tk):
         newFrame = FF.EmptyFilterFrame(self.settingsParent,self.controller, relief = "raised", borderwidth=2)
         newFrame.pack(expand=True, anchor="n", fill=tk.X)
         newFrame.onFilterSelect.append(self.addEmptyFilterFrame)
-        newFrame.onFilterUpdate.append(self.updateDiagrams)
+        #newFrame.onFilterUpdate.append(self.updateDiagrams)
         self.onDeleteFilters.append(newFrame.destroy)
 
     def addEmptyDiagramFrame(self, *args):

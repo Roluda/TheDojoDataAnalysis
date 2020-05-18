@@ -283,6 +283,7 @@ class EventDiagramFrame(tk.Frame):
             self.fig.tight_layout()
 
         except Exception as e:
+            print("oops",e.args)
             pass
 
 
@@ -344,3 +345,68 @@ class CurveDiagramFrame(tk.Frame):
 
         except Exception as e:
             pass
+
+class ComparisonPieDiagramFrame(tk.Frame):
+    def __init__(self, master=None, controller = None, cnf={}, **kw):
+        super().__init__(master=master, cnf=cnf, **kw)
+        self.controller = controller
+        self.attributeSet = sorted(C.uniqueLanguageAttributesInData(self.controller.treeOutput()))
+        self.attributeTkVar = tk.StringVar(self)
+        self.attributeTkVar.set("select attribut")
+        self.attributeTkVar.trace('w', self.refresh)
+        self.attributeSelect = tk.OptionMenu(self, self.attributeTkVar, *self.attributeSet)
+        self.attributeSelect.grid(row = 2, sticky="S")
+
+        self.fig, self.ax = mpl.subplots()
+        self.updateFigure()
+
+        self.canvas = FigureCanvasTkAgg(self.fig, master=self)
+        self.canvas.draw()
+        self.canvas.get_tk_widget().grid(row=0, sticky="NE")
+        self.toolbarFrame = tk.Frame(self)
+        self.toolbar = NavigationToolbar2Tk(self.canvas, self.toolbarFrame)
+        self.toolbar.update()
+        self.toolbarFrame.grid()
+        self.canvas.get_tk_widget().grid(row=1, sticky="NE")
+
+    def refresh(self, *args):
+        self.ax.clear()
+        self.updateFigure()
+        self.canvas.draw()
+
+    def updateFigure(self):
+        drawDict = {}
+        try:
+            for element in self.controller.treeOutput():
+                flat = C.flatElement(element)
+                if self.attributeTkVar.get() in flat.keys():
+                    if flat[self.attributeTkVar.get()] not in drawDict.keys():
+                        drawDict[flat[self.attributeTkVar.get()]] = 1
+                    else:
+                        drawDict[flat[self.attributeTkVar.get()]] += 1
+
+            sortedDict = {k:v for k, v in sorted(drawDict.items(), key=lambda item:item[1], reverse=True)}
+            wedges, texts, autotexts = self.ax.pie(
+                sortedDict.values(),
+                labels=sortedDict.keys(), 
+                counterclock=False,
+                startangle=90, 
+                autopct="%1.0f%%",
+                pctdistance=0.8,
+                labeldistance=None,
+            )
+            self.ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            self.ax.set_title("relatives of "+self.controller.root.tag)
+
+            self.ax.legend(
+                wedges, 
+                sortedDict.keys(),
+                loc="center left",
+                bbox_to_anchor=(1, 0, 0.5, 1)
+            )
+            self.fig.tight_layout()
+
+        except Exception as e:
+            print(type(e))
+            print(e.args)
+            print(e)
