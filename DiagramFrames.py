@@ -6,6 +6,7 @@ import datetime
 import numpy as np
 import tkinter as tk
 import Controller as C
+import FilterFrames as FF
 
 diagrams = {"Bar Diagram","Scatter Diagram","Pie Diagram", "Event Diagram", "Curve Diagram"}
 
@@ -350,6 +351,7 @@ class ComparisonPieDiagramFrame(tk.Frame):
     def __init__(self, master=None, controller = None, cnf={}, **kw):
         super().__init__(master=master, cnf=cnf, **kw)
         self.controller = controller
+
         self.attributeSet = sorted(C.uniqueLanguageAttributesInData(self.controller.treeOutput()))
         self.attributeTkVar = tk.StringVar(self)
         self.attributeTkVar.set("select attribut")

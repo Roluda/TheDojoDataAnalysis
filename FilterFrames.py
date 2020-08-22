@@ -9,6 +9,7 @@ class EmptyFilterFrame(tk.Frame):
         self.controller = controller
         self.onFilterSelect = []
         self.onFilterUpdate = []
+        self.onFrameDestroy = []
 
         self.newFilterTkVar = tk.StringVar(self)
         self.newFilterTkVar.set("Add Filter..")
@@ -108,6 +109,7 @@ class EmptyFilterFrame(tk.Frame):
         for action in self.onFilterUpdate: action()
 
     def destroy(self):
+        for action in self.onFrameDestroy: action()
         if hasattr(self, "filter"):
             self.filter.delete()
         super().destroy()
